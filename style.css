@@ -7,3 +7,8 @@
     width: 100vw;
 }
 
+.buttons {
+    display: flex;
+}
+
+
