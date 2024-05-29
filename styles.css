@@ -1,14 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    margin: 0;
     width: 100vw;
 }
 
+
 .box-buttons {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    background-color: black;
+}
+
+button {
+    cursor: pointer;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+header {
     display: flex;
 }
 
+#img-PE {
+    width: 150px;
+}
 
+.box-title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+h1 {
+    padding: 3%;
+}
+
+#img-logo {
+    width: 95%;
+}
+
+
+
+#img-home {
+
+    width: 50%;
+    
+    
+  
+}
