@@ -1,7 +1,10 @@
 
-
-const clickOnButton = document.querySelector("button")
-
 menuOptions.forEach(element => {
-    clickOnButton = console.log(element)
+ `
+ <li>
+        <img class="cars" src=${element.src}>
+            <p>${element.name}</p>
+            <p class="valor">R$ ${element.price}</p>
+    </li>
+ `
 });
