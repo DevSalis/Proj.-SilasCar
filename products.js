@@ -16,7 +16,7 @@ const menuOptions = [
 
     { name: 'Camaro', price: 480, popular: false, src: './assets/car 5.png' },
 
-    { name: 'Ferrari', price: 3.400, popular: false, src: './assets/car 7.png' },
+    { name: 'Ferrari', price: 3400, popular: false, src: './assets/car 7.png' },
 
     { name: 'Porsche', price: 630, popular: false, src: './assets/car 8.png' },
 
