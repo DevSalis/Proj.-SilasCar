@@ -1,26 +1,27 @@
 
+const myUl = document.querySelector("ul")
+let myLi = ""
 
+function showAll() {
+    menuOptions.forEach(element => {
 
-
-const catalogo = document.querySelector("ul")
-const mostrarTudo = document.querySelector("#buttonShowAll")
-
-let myLi = ''
-
-function primeiroDesafio() {
-    menuOptions.forEach((element) => {
         myLi += `
-           <li>
-               <img class="cars" src="${element.src}">
-                   <p>${element.name}</p>
-                   <p class="valor">R$ ${element.price}</p>
-           </li>
-        `
-        });
-        catalogo.innerHTML = myLi
+        <li>
+        <img class="cars" src="${element.src}">
+            <p>${element.name}</p>
+            <p class="valor">R$ ${element.price}</p>
+    </li>`
+       
+        
+       
+    });
+
+    myUl.innerHTML = myLi
+
 }
 
+const myButton = document.querySelector("#buttonShowAll")
 
+myButton.addEventListener("click", showAll)
 
-mostrarTudo.addEventListener("click", primeiroDesafio)
 
