@@ -19,8 +19,13 @@ function mostrarTudo() {
     });
 }
 function catalogoOf(){
-
-    console.log("tem desconto?")
+const descontoof =  menuOptions.map( (of) => ({
+name: of.name,
+price: of.price * 0.9,
+popular: of.popular,
+src: of.src
+}))
+   
 }
 
 
