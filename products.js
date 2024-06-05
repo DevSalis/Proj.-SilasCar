@@ -4,7 +4,7 @@ const menuOptions = [
 
     { name: 'Gol', price: 75, popular: true, src: './assets/car 10.png' },
 
-    { name: 'Cruze', price: 148, popular: false, src: './assets/car 11.png' },
+    { name: 'Cruze', price: 150, popular: false, src: './assets/car 11.png' },
 
     { name: 'Mercedes sports', price: 970, popular: false, src: './assets/car 6.png' },
 
@@ -22,6 +22,6 @@ const menuOptions = [
 
     { name: 'Celta', price: 25, popular: true, src: './assets/car 9.png' },
 
-    { name: 'Kwid', price: 52, popular: true, src: './assets/car 12.png' },
+    { name: 'Kwid', price: 51, popular: true, src: './assets/car 12.png' },
 
 ]
