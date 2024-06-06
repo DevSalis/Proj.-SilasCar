@@ -1,14 +1,15 @@
+/*
 
 const minhaUl = document.querySelector('ul')
 const meuBotao = document.querySelector('#buttonShowAll')
 const desconto = document.querySelector('#buttonOf')
 
 
-function mostrarTudo() {
+function mostrarTudo(newarray) {
 
     let minhaLi = ''
 
-    menuOptions.forEach(element => {
+    newarray.forEach(element => {
         minhaLi += `
            <li>
                <img class="cars" src="${element.src}">
@@ -19,9 +20,20 @@ function mostrarTudo() {
            minhaUl.innerHTML = minhaLi
     });
 }
+function catalogoOf(){
+const descontoof =  menuOptions.map( (of) => ({
+...of,   
+price: of.price * 0.9,
+
+}))
+
+mostrarTudo(descontoof)
+  
+}
+
+meuBotao.addEventListener('click', () => mostrarTudo (menuOptions))
+desconto.addEventListener('click', catalogoOf)
 
 
-meuBotao.addEventListener('click', mostrarTudo)
 
-
-
+*/
