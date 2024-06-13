@@ -29,9 +29,21 @@ function blackFriday(){
     }))
 
     mostrarTudo(of10)
-
 }
 
+
+
+meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
+meuDesconto.addEventListener('click', blackFriday)
+minhaSoma.addEventListener('click', total)
+maisBarato.addEventListener('click', barato)
+
+
+
+
+
+
+/*
 function total() {
      
 
@@ -62,11 +74,5 @@ function barato() {
 const popularCar = menuOptions.filter((maisBarato) => maisBarato.popular)
 mostrarTudo(popularCar)
 }
-
-meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
-meuDesconto.addEventListener('click', blackFriday)
-minhaSoma.addEventListener('click', total)
-maisBarato.addEventListener('click', barato)
-
-
+*/
 
