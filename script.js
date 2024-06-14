@@ -31,7 +31,11 @@ function blackFriday(){
     mostrarTudo(of10)
 }
 
+function total() {
+    console.log("botão reduce funcionando")
+}
 
+console.log(total)
 
 meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
 meuDesconto.addEventListener('click', blackFriday)
