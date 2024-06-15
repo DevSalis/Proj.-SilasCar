@@ -32,7 +32,7 @@ function blackFriday(){
 }
 
 function total() {
-    console.log("botão reduce funcionando")
+    const popular = menuOptions.filter()
 }
 
 console.log(total)
