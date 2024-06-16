@@ -16,7 +16,7 @@ const menuOptions = [
 
     { name: 'Porsche', price: 630, popular: false, src: './assets/car 8.png' },
 
-    { name: 'Celta', price: 30, popular: true, src: './assets/car 9.png' },
+    { name: 'Celta', price: 20, popular: true, src: './assets/car 9.png' },
 
     { name: 'Kwid', price: 50, popular: true, src: './assets/car 12.png' },
 
