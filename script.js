@@ -9,6 +9,7 @@ const maisBarato = document.querySelector('#button-populares')
 function mostrarTudo(newarray) {
 
     let minhaLi = ''
+    
 
     newarray.forEach(element => {
         minhaLi += `
@@ -19,6 +20,7 @@ function mostrarTudo(newarray) {
            </li>`
 
         minhaUl.innerHTML = minhaLi
+       
     });
 }
 
