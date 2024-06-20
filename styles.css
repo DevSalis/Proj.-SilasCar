@@ -10,28 +10,84 @@
 body {
     margin: 0;
     width: 100vw;
-}
-
-.box-buttons {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    position: relative;
     background-color: rgb(0, 0, 0);
 }
 
-button {
+.box-buttons {
+    display: none;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    height: 10%;
+}
+
+.button-style {
+    background-color: #ffffff;
     cursor: pointer;
     width: 20%;
+    height: 40px; /* Altura ajustada para ambos */
     border: none;
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 15px;
+    display: flex; /* Adicionado para alinhamento */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
 }
 
-button:hover {
+.button-style:hover {
+    opacity: 0.8;
+    background-color: #3a06f5;
+    color: #ffff;
+}
+
+button {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+
+.home-top {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 20%;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 15px;
+   
+}
+
+button:hover, a:hover {
     opacity: 0.8;
     background-color: #3a06f5;
     color: #ffff;
@@ -50,23 +106,25 @@ header {
 
 #img-logo {
     width: 50%;
-    margin-left: -7%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-left: -6%;
+    margin-top: 5%;
+    align-items: center;
+    margin-bottom: 4%;
     margin-right: 3%
 }
 
 #img-home {
-    margin-top: 2%;
+    margin-top: 5%;
     width: 38%;
     margin-bottom: 2%;
-
+    margin-left: -1%;
 }
 
 .home {
     display: flex;
     background-color: #000000;
-   height: 359px;
+    height: 359px;
+    
 }
 
 .box-text-home {
@@ -78,7 +136,6 @@ header {
     gap: 25px;
     width: 45%;
     position: absolute;
-    
 }
 
 h1 {
@@ -109,7 +166,6 @@ h1 {
 video {
     width: 60%;
     margin-left: 40%;
-   
 }
 
 ul {
@@ -142,16 +198,19 @@ li:hover {
 }
 
 .valor-total {
-    display: flex;
-    text-align: left;
-    width: 50%;
     position: absolute;
-    font-size: 40px;
-    margin-left: 25%;
+    width: 50%;
+    margin-top: 10%; /* Adicione a margem superior desejada */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    background-color: #f0f0f0; /* Adicione uma cor de fundo para visualização, opcional */
+    padding: 10px; /* Adicione algum preenchimento para visualização, opcional */
+    border-radius: 5px; /* Adicione cantos arredondados para visualização, opcional */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione sombra para visualização, opcional */
 }
 
 .valor-total-1 {
     color: blue;
+   
 }
 
 .cars {
