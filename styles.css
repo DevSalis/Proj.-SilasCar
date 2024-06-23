@@ -10,6 +10,7 @@
 body {
     margin: 0;
     width: 100vw;
+    height: 100vh;
 }
 
 .box-buttons {
@@ -22,20 +23,24 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-button {
+a {
     cursor: pointer;
     width: 20%;
     border: none;
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
+    color: #000000;
+    text-align: center;
+    background-color: #ffffff;
 }
 
-button:hover {
-    opacity: 0.8;
-    background-color: #3a06f5;
-    color: #ffff;
+a:hover {
+    opacity: 0.9;
+    background-color: #c6eef6;
+    color: #0206ff;
 }
+
 
 header {
     display: flex;
@@ -81,23 +86,7 @@ h1 {
     text-transform: uppercase;
 }
 
-#buttonShowAll {
-    cursor: pointer;
-    width: 40%;
-    height: 25%;
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: aquamarine;
-}
 
-#buttonShowAll:hover {
-    opacity: 0.8;
-    background-color: #3a06f5;
-    color: #ffff;
-}
 
 video {
     width: 60%;
