@@ -56,6 +56,54 @@ header {
     width: 38%;
 }
 
+.home {
+    display: flex;
+    background-color: #000000;
+    margin-top: 4%;
+}
+
+.box-text-home {
+    display: flex;
+    text-align: center;
+    
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8%;
+  gap: 25px;
+    width: 45%;
+    position: absolute;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#buttonShowAll {
+    cursor: pointer;
+    width: 40%;
+    height: 25%;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: aquamarine;
+}
+
+#buttonShowAll:hover {
+    opacity: 0.8;
+    background-color: #3a06f5;
+    color: #ffff;
+}
+
+video {
+    width: 60%;
+    margin-left: 40%;
+}
+
 ul {
     list-style: none;
     display: grid;
