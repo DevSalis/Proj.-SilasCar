@@ -16,38 +16,25 @@
 <body>
     <nav>
         <div class="box-buttons">
-            <a href=".top" class="home-top button-style">HOME</a>
-            <button id="buttonOf" class="button-style">DESCONTO 10%</button>
-            <button id="buttonTotal" class="button-style">TOTAL</button>
-            <button id="button-populares" class="button-style">POPULARES</button>
+            <button id="buttonShowAll">CATALOGO<br>ForEach( )</button>
+            <button id="buttonOf">DESCONTO 10%<br>map( )</button>
+            <button id="buttonTotal">TOTAL<br>reduce( )</button>
+            <button id="button-populares">POPULARES<br>filter( )</button>
         </div>
     </nav>
 
-    <header class="top">
+    <header>
+
         <img id="img-PE" src="./assets/car-pe.png" alt="bandeira-PE">
         <img id="img-logo" src="./assets/logo-silasCar.png" alt="logo-SilasCar">
         <img id="img-home" src="./assets/Image-Source-PlusPNG.com.png" alt="Tres-carros">
+
     </header>
-
     <main>
-        <section class="home">
-            <div class="box-text-home">
-                <h1>Ôxe, ficar arrudiando não moço,
-                    pra que quebrar a cabeça?<br>
-                    temos carros pra todos os gostos,
-                    pra o caba humilde e o metido a besta.</h1>
-                <a href="#catalogo" id="buttonShowAll">Conheça nossos<br>CARROS</a>
-            </div>
+        <ul>
+            
 
-            <video autoplay loop muted disablePictureInPicture>
-                <source src="./assets/clipe-car-mascara.mp4" type="video/mp4">
-            </video>
-        </section>
-
-        <section id="catalogo-section">
-            <ul id="catalogo"></ul>
-        </section>
-        
+        </ul>
     </main>
 
 </body>

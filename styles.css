@@ -10,84 +10,28 @@
 body {
     margin: 0;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
 }
 
 .box-buttons {
-    display: none;
-    padding: 5px;
+    display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
     background-color: rgb(0, 0, 0);
-    z-index: 1000;
-    height: 10%;
-}
-
-.button-style {
-    background-color: #ffffff;
-    cursor: pointer;
-    width: 20%;
-    height: 40px; /* Altura ajustada para ambos */
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    margin-top: 15px;
-    display: flex; /* Adicionado para alinhamento */
-    justify-content: center; /* Centraliza o texto horizontalmente */
-    align-items: center; /* Centraliza o texto verticalmente */
-}
-
-.button-style:hover {
-    opacity: 0.8;
-    background-color: #3a06f5;
-    color: #ffff;
 }
 
 button {
-    background-color: #ffffff;
     cursor: pointer;
     width: 20%;
-    height: 40px;
     border: none;
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    margin-top: 15px;
 }
 
-
-.home-top {
-    background-color: #ffffff;
-    cursor: pointer;
-    width: 20%;
-    height: 33px;
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    margin-top: 15px;
-   
-}
-
-button:hover, a:hover {
+button:hover {
     opacity: 0.8;
     background-color: #3a06f5;
     color: #ffff;
@@ -95,9 +39,6 @@ button:hover, a:hover {
 
 header {
     display: flex;
-    background-image: url('./assets/Fundo-xadrez.png');
-    background-size: cover;
-    background-position: center;
 }
 
 #img-PE {
@@ -106,77 +47,24 @@ header {
 
 #img-logo {
     width: 50%;
-    margin-left: -6%;
-    margin-top: 5%;
-    align-items: center;
-    margin-bottom: 4%;
-    margin-right: 3%
+    margin-left: -7%;
+    margin-right: 3%;
 }
 
 #img-home {
-    margin-top: 5%;
+    margin-top: 2%;
     width: 38%;
-    margin-bottom: 2%;
-    margin-left: -1%;
-}
-
-.home {
-    display: flex;
-    background-color: #000000;
-    height: 359px;
-    margin-bottom: 10%;
-}
-
-.box-text-home {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 9%;
-    gap: 25px;
-    width: 45%;
-    position: absolute;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-
-#buttonShowAll {
-    cursor: pointer;
-    width: 40%;
-    height: 25%;
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: aquamarine;
-}
-
-#buttonShowAll:hover {
-    opacity: 0.8;
-    background-color: #3a06f5;
-    color: #ffff;
-}
-
-video {
-    width: 60%;
-    margin-left: 40%;
 }
 
 ul {
     list-style: none;
     display: grid;
     grid-template-columns: 210px 210px 210px 210px 210px;
+    margin-top: 5%;
     gap: 3%;
     justify-content: center;
     background-color: black;
     padding: 5%;
-    width: 90vw;
 }
 
 li {
@@ -187,32 +75,27 @@ li {
     align-items: center;
     justify-content: center;
     background-color: rgb(207, 201, 188);
-    margin-bottom: 10%;
-    margin-top: 30px;
+   margin-bottom: 10%;
 }
 
 li:hover {
+   
     background-color: #ffffff;
     color: #000000;
     border: 4px solid #55f335;
 }
 
 .valor-total {
-    display: inline;
-    width: 200%;
-    margin-left: 150%;
-    margin-top: 90%;
-    bottom: 50%; /* Adicione a margem superior desejada */
-    text-align: center; /* Centraliza o texto dentro do elemento */
-    background-color: #f0f0f0; /* Adicione uma cor de fundo para visualização, opcional */
-    padding: 10px; /* Adicione algum preenchimento para visualização, opcional */
-    border-radius: 5px; /* Adicione cantos arredondados para visualização, opcional */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione sombra para visualização, opcional */
+    display: flex;
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 25%;
 }
 
 .valor-total-1 {
     color: blue;
-   
 }
 
 .cars {
