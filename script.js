@@ -62,6 +62,21 @@ const popularCar = menuOptions.filter((maisBarato) => maisBarato.popular)
 mostrarTudo(popularCar)
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const acceptButton = document.getElementById('accept-button');
+    const acceptTerms = document.getElementById('accept-terms');
+
+    acceptTerms.addEventListener('change', function() {
+        acceptButton.disabled = !this.checked;
+    });
+
+    acceptButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+});
+
+
 
 
 meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
