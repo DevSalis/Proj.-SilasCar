@@ -73,6 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     acceptButton.addEventListener('click', function() {
         modal.style.display = 'none';
+
+        var somEntrada = new Audio("assets/top-gear-xote.mp3");
+        somEntrada.play();
     });
 });
 
