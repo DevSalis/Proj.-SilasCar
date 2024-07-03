@@ -6,6 +6,7 @@ const minhaSoma = document.querySelector('#buttonTotal')
 const maisBarato = document.querySelector('#button-populares')
 
 
+
 function mostrarTudo(newarray) {
 
     let minhaLi = ''
@@ -66,6 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
     const acceptButton = document.getElementById('accept-button');
     const acceptTerms = document.getElementById('accept-terms');
+    const playPauseButton = document.getElementById('play-pause-button');
+
+    let isPlaying = false;
+    const somEntrada = new Audio("assets/top-gear-xote.mp3");
+    somEntrada.loop = true;
 
     acceptTerms.addEventListener('change', function() {
         acceptButton.disabled = !this.checked;
@@ -76,6 +82,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var somEntrada = new Audio("assets/top-gear-xote.mp3");
         somEntrada.play();
+
+        
+    });
+
+    playPauseButton.addEventListener('click', function() {
+        
+        audioControls.style.display = 'block';
+        
+        if (isPlaying) {
+            somEntrada.pause();
+            playPauseButton.textContent = 'Play';
+        } else {
+            somEntrada.play();
+            playPauseButton.textContent = 'Pause';
+        }
+        isPlaying = !isPlaying;
+
     });
 });
 

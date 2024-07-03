@@ -215,6 +215,20 @@ li:hover {
     color: #000000;
 }
 
+#audio-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+   
+}
+
+#audio-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 footer {
     background: url("./assets/Fundo-xadrez.png");
 
