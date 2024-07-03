@@ -6,7 +6,6 @@ const minhaSoma = document.querySelector('#buttonTotal')
 const maisBarato = document.querySelector('#button-populares')
 
 
-
 function mostrarTudo(newarray) {
 
     let minhaLi = ''
@@ -68,39 +67,47 @@ document.addEventListener('DOMContentLoaded', function() {
     const acceptButton = document.getElementById('accept-button');
     const acceptTerms = document.getElementById('accept-terms');
     const playPauseButton = document.getElementById('play-pause-button');
-
+    const audioControls = document.getElementById('audio-controls');
+    
     let isPlaying = false;
     const somEntrada = new Audio("assets/top-gear-xote.mp3");
+    somEntrada.volume = 0.1;
     somEntrada.loop = true;
 
+    // Habilita o botão de aceitar termos quando o checkbox é marcado
     acceptTerms.addEventListener('change', function() {
         acceptButton.disabled = !this.checked;
     });
 
+    // Ao clicar no botão de aceitar termos
     acceptButton.addEventListener('click', function() {
-        modal.style.display = 'none';
+        modal.style.display = 'none'; // Esconde o modal
+        audioControls.style.display = 'block'; // Exibe os controles de áudio
 
-        var somEntrada = new Audio("assets/top-gear-xote.mp3");
-        somEntrada.play();
-
-        
+        somEntrada.play().then(() => {
+            playPauseButton.textContent = 'Pause'; // Atualiza o texto do botão
+            isPlaying = true; // Atualiza o estado de reprodução
+        }).catch((error) => {
+            console.error('Error playing audio:', error);
+        });
     });
 
+    // Controle de play/pause
     playPauseButton.addEventListener('click', function() {
-        
-        audioControls.style.display = 'block';
-        
         if (isPlaying) {
             somEntrada.pause();
             playPauseButton.textContent = 'Play';
         } else {
-            somEntrada.play();
-            playPauseButton.textContent = 'Pause';
+            somEntrada.play().then(() => {
+                playPauseButton.textContent = 'Pause';
+            }).catch((error) => {
+                console.error('Error resuming audio:', error);
+            });
         }
         isPlaying = !isPlaying;
-
     });
 });
+
 
 
 
@@ -109,4 +116,3 @@ meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
 meuDesconto.addEventListener('click', blackFriday)
 minhaSoma.addEventListener('click', total)
 maisBarato.addEventListener('click', barato)
-

@@ -216,11 +216,10 @@ li:hover {
 }
 
 #audio-controls {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: relative;
+    
     z-index: 1001;
-   
+ 
 }
 
 #audio-controls button {
