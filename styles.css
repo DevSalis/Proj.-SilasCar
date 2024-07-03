@@ -43,6 +43,20 @@ a:hover {
     color: #0206ff; 
 }
 
+
+#play-pause-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+    width: 35px;
+    display: none;
+}
+
+span {
+    font-size: 25px;
+}
+
 #button-pag-1 {
     width: 20%;
     background-color: #4bd7f3;
@@ -215,22 +229,8 @@ li:hover {
     color: #000000;
 }
 
-#audio-controls {
-    position: relative;
-    
-    z-index: 1001;
- 
-}
-
-#audio-controls button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
 footer {
     background: url("./assets/Fundo-xadrez.png");
-
 }
 
 #paragrafo-footer {

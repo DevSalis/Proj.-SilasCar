@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const acceptButton = document.getElementById('accept-button');
     const acceptTerms = document.getElementById('accept-terms');
     const playPauseButton = document.getElementById('play-pause-button');
-    const audioControls = document.getElementById('audio-controls');
     
     let isPlaying = false;
     const somEntrada = new Audio("assets/top-gear-xote.mp3");
@@ -82,10 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ao clicar no botão de aceitar termos
     acceptButton.addEventListener('click', function() {
         modal.style.display = 'none'; // Esconde o modal
-        audioControls.style.display = 'block'; // Exibe os controles de áudio
+        playPauseButton.style.display = 'block'; // Exibe os controles de áudio
 
         somEntrada.play().then(() => {
-            playPauseButton.textContent = 'Pause'; // Atualiza o texto do botão
+            playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; // Atualiza o texto do botão
             isPlaying = true; // Atualiza o estado de reprodução
         }).catch((error) => {
             console.error('Error playing audio:', error);
@@ -96,10 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
     playPauseButton.addEventListener('click', function() {
         if (isPlaying) {
             somEntrada.pause();
-            playPauseButton.textContent = 'Play';
+            playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; // Atualiza o texto do botão para o emoji de "Play"
         } else {
             somEntrada.play().then(() => {
-                playPauseButton.textContent = 'Pause';
+                playPauseButton.innerHTML = '<span>&#x1F507;</span>'; // Atualiza o texto do botão para o emoji de "Pause"
             }).catch((error) => {
                 console.error('Error resuming audio:', error);
             });
