@@ -229,6 +229,20 @@ li:hover {
     color: #000000;
 }
 
+.carrosseu {
+    background-image: radial-gradient(#7a3e77, #5f59c3);
+    height: 100vh;
+    position: relative;
+
+    & .list {
+        width: 70vw;
+        margin: auto;
+        height: 100%;
+        position: relative;
+    }
+}
+
+
 footer {
     background: url("./assets/Fundo-xadrez.png");
 }

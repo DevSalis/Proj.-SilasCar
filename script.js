@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         playPauseButton.style.display = 'block'; // Exibe os controles de áudio
 
         somEntrada.play().then(() => {
-            playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; // Atualiza o texto do botão
+            playPauseButton.innerHTML = '<span>&#x1F507;</span>'; // Atualiza o texto do botão
             isPlaying = true; // Atualiza o estado de reprodução
         }).catch((error) => {
             console.error('Error playing audio:', error);
