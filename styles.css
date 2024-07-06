@@ -133,7 +133,7 @@ ul {
     grid-template-columns: 210px 210px 210px 210px 210px;
     gap: 3%;
     justify-content: center;
-    background-color: black;
+    background-image: radial-gradient(#a0739f, #687ea7);
     padding: 5%;
 }
 
@@ -230,7 +230,7 @@ li:hover {
 }
 
 .carrosseu {
-    background-image: radial-gradient(#7a3e77, #5f59c3);
+    background-image: radial-gradient(#a0739f, #687ea7);
     height: 100vh;
     position: relative;
 
