@@ -240,6 +240,11 @@ li:hover {
         height: 100%;
         position: relative;
     }
+
+    & .itens {
+        position: absolute;
+        inset: 0;
+    }
 }
 
 
