@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let isPlaying = false;
     const somEntrada = new Audio("assets/top-gear-xote.mp3");
-    somEntrada.volume = 0.1;
+    somEntrada.volume = 0.07;
     somEntrada.loop = true;
 
     // Habilita o botão de aceitar termos quando o checkbox é marcado
