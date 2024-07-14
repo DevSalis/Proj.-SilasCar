@@ -287,6 +287,9 @@ li:hover {
                 height: 35px;
                 width: 140px;
                 font-size: 12px;
+                text-transform: uppercase;
+                border: 2px solid #f335ca;
+                background-color: #08f518;
                 
             }
         }
