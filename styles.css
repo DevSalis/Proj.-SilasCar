@@ -395,12 +395,21 @@ li:hover {
 
             & .car {
                 & img {
-
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
                 }
             }
 
             & .box-carrossel {
 
+                & #carrossel-p1,
+                h2,
+                #carrossel-p2,
+                #buttonShowAll {
+                    transform: translateX(200px);
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+                }
             }
         }
     }
