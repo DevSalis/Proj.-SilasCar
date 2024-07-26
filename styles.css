@@ -410,18 +410,19 @@ li:hover {
                     transform: translateX(200px);
                     transition: 0.7s;
                     transition-delay: 0.3s;
+                    opacity: 0;
                 }
 
                 & h2 {
-                    transition-delay: 0.4s; 
+                    transition-delay: 0.4s;
                 }
 
                 & #carrossel-p2 {
-                    transition-delay: 0.5s; 
+                    transition-delay: 0.5s;
                 }
 
                 & #buttonShowAll {
-                    transition-delay: 0.6s; 
+                    transition-delay: 0.6s;
                 }
             }
         }
@@ -431,16 +432,15 @@ li:hover {
             transition: 0.5s;
             opacity: 1;
 
-            
+
             & .box-carrossel {
 
                 & #carrossel-p1,
                 h2,
                 #carrossel-p2,
                 #buttonShowAll {
-                    transform: translateX(200px);
-                    transition: 0.7s;
-                    transition-delay: 0.3s;
+                    transform: translateX(0);
+                    opacity: 1;
                 }
             }
         }
