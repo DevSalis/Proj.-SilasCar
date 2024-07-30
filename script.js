@@ -7,7 +7,9 @@ const maisBarato = document.querySelector('#button-populares')
 let prevButton = document.getElementById('prev')
 let nextButton = document.getElementById('next')
 let boxCarrossel = document.querySelector('.carrossel')
-let listAll = document.querySelectorAll('prev')
+let listAll = document.querySelectorAll('.list .itens')
+let boxIndicators = document.querySelector('.indicators')
+let boxUlLi = document.querySelectorAll('ul li')
 
 
 function mostrarTudo(newarray) {
