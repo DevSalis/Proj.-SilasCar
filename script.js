@@ -4,6 +4,8 @@ const meuCatalogo = document.querySelector('#buttonShowAll')
 const meuDesconto = document.querySelector('#buttonOf')
 const minhaSoma = document.querySelector('#buttonTotal')
 const maisBarato = document.querySelector('#button-populares')
+
+
 let prevButton = document.getElementById('prev')
 let nextButton = document.getElementById('next')
 let boxCarrossel = document.querySelector('.carrossel')
