@@ -5,15 +5,6 @@ const meuDesconto = document.querySelector('#buttonOf')
 const minhaSoma = document.querySelector('#buttonTotal')
 const maisBarato = document.querySelector('#button-populares')
 
-
-let prevButton = document.getElementById('prev')
-let nextButton = document.getElementById('next')
-let boxCarrossel = document.querySelector('.carrossel')
-let listAll = document.querySelectorAll('.list .itens')
-let boxIndicators = document.querySelector('.indicators')
-let boxUlLi = document.querySelectorAll('ul li')
-
-
 function mostrarTudo(newarray) {
 
     let minhaLi = ''
@@ -115,11 +106,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-
-
 meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
 meuDesconto.addEventListener('click', blackFriday)
 minhaSoma.addEventListener('click', total)
 maisBarato.addEventListener('click', barato)
+
+
+
+let prevButton = document.getElementById('prev')
+let nextButton = document.getElementById('next')
+let boxCarrossel = document.querySelector('.carrossel')
+let listAll = document.querySelectorAll('.list .itens')
+let boxIndicators = document.querySelector('.indicators')
+let boxUlLi = document.querySelectorAll('ul li')
+
+let active = 0
+let firstPosition = 0
+let lastPosition = item.length - 1
+
+item - 0
+item - 1
+item - 2
+item - 3
+item - 4
+item - 5
+item - 6
+item - 7
+item - 8
+item - 9
+
+prevButton.onclick = () => {
+console.log("prev")
+}
+
+nextButton.onclick = () => {
+    console.log("next")
+}

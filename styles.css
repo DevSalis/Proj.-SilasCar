@@ -388,7 +388,7 @@ li:hover {
 
 .carrossel {
     & .list {
-        & .itens {
+        & .item {
 
             transform: translateX(100vw);
             transition: 0.5s;
