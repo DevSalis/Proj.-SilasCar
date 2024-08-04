@@ -21,28 +21,28 @@ function mostrarTudo(newarray) {
     });
 }
 
-function blackFriday(){
+function blackFriday() {
     const of10 = menuOptions.map((of) => ({
-       ...of,
-       price: of.price * 0.9, 
+        ...of,
+        price: of.price * 0.9,
     }))
 
     mostrarTudo(of10)
 }
 
 function total() {
-     
 
-    const buyAll =  menuOptions.reduce((acc, soma) =>{
+
+    const buyAll = menuOptions.reduce((acc, soma) => {
         return acc + soma.price
-    },0)
+    }, 0)
 
     const of10 = menuOptions.map((of) => ({
         ...of,
-        price: of.price * 0.9, 
-     }))
+        price: of.price * 0.9,
+    }))
 
-     const ofTotal = of10.reduce((acc, curr) => acc + curr.price, 0)
+    const ofTotal = of10.reduce((acc, curr) => acc + curr.price, 0)
 
 
     minhaUl.innerHTML = `
@@ -52,33 +52,33 @@ function total() {
     </li>`
 
     console.log(buyAll, ofTotal)
-   
+
 }
 
 function barato() {
-    
-const popularCar = menuOptions.filter((maisBarato) => maisBarato.popular)
-mostrarTudo(popularCar)
+
+    const popularCar = menuOptions.filter((maisBarato) => maisBarato.popular)
+    mostrarTudo(popularCar)
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('modal');
     const acceptButton = document.getElementById('accept-button');
     const acceptTerms = document.getElementById('accept-terms');
     const playPauseButton = document.getElementById('play-pause-button');
-    
+
     let isPlaying = false;
     const somEntrada = new Audio("assets/top-gear-xote.mp3");
     somEntrada.volume = 0.07;
     somEntrada.loop = true;
 
     // Habilita o botão de aceitar termos quando o checkbox é marcado
-    acceptTerms.addEventListener('change', function() {
+    acceptTerms.addEventListener('change', function () {
         acceptButton.disabled = !this.checked;
     });
 
     // Ao clicar no botão de aceitar termos
-    acceptButton.addEventListener('click', function() {
+    acceptButton.addEventListener('click', function () {
         modal.style.display = 'none'; // Esconde o modal
         playPauseButton.style.display = 'block'; // Exibe os controles de áudio
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Controle de play/pause
-    playPauseButton.addEventListener('click', function() {
+    playPauseButton.addEventListener('click', function () {
         if (isPlaying) {
             somEntrada.pause();
             playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; // Atualiza o texto do botão para o emoji de "Play"
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-meuCatalogo.addEventListener('click', ()=> mostrarTudo(menuOptions))
+meuCatalogo.addEventListener('click', () => mostrarTudo(menuOptions))
 meuDesconto.addEventListener('click', blackFriday)
 minhaSoma.addEventListener('click', total)
 maisBarato.addEventListener('click', barato)
@@ -116,29 +116,32 @@ maisBarato.addEventListener('click', barato)
 let prevButton = document.getElementById('prev')
 let nextButton = document.getElementById('next')
 let boxCarrossel = document.querySelector('.carrossel')
-let listAll = document.querySelectorAll('.list .itens')
-let boxIndicators = document.querySelector('.indicators')
-let boxUlLi = document.querySelectorAll('ul li')
+let items = document.querySelectorAll('.list .item')
 
 let active = 0
 let firstPosition = 0
-let lastPosition = item.length - 1
+let lastPosition = items.length - 1
 
-item - 0
-item - 1
-item - 2
-item - 3
-item - 4
-item - 5
-item - 6
-item - 7
-item - 8
-item - 9
+function setSlider() {
+
+    let itemOld = boxCarrossel.querySelector(".list .item.active")
+    itemOld.classList.remove("active")
+
+}
+
 
 prevButton.onclick = () => {
-console.log("prev")
+
+    active = active + 1 > lastPosition ? 0 : active + 1
+    setSlider()
+    items[active].classList.add("active")
+
 }
 
 nextButton.onclick = () => {
-    console.log("next")
+
+    active = active - 1 < firstPosition ? lastPosition : active - 1
+    setSlider()
+    items[active].classList.add("active")
+
 }
