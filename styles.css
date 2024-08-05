@@ -18,7 +18,7 @@ body {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     position: relative;
     background-color: rgb(0, 0, 0);
 }
@@ -51,6 +51,7 @@ a:hover {
     padding: 0;
     width: 35px;
     display: none;
+    margin-right: 10px;
 }
 
 span {
@@ -291,16 +292,6 @@ li:hover {
                     max-width: 400px;
                 }
 
-                & #buttonShowAll {
-                    border-radius: 30px;
-                    height: 35px;
-                    width: 140px;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    border: 2px solid #910bb6;
-                    background-color: #08f518;
-                    cursor: pointer;
-                }
             }
 
         }
