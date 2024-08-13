@@ -13,6 +13,14 @@ body {
     overflow-x: hidden;
 }
 
+.menu-toggle {
+    display: none; /* Ocultar o botão de menu em telas grandes */
+}
+
+.box-links {
+    display: none; /* Ocultar o menu lateral por padrão */
+}
+
 .box-links {
     display: flex;
     padding: 10px;
@@ -415,3 +423,77 @@ footer {
     font-size: 10px;
 }
 
+@media (max-width: 768px) {
+    /* Estilos para o botão do menu */
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1001; /* Garantir que o botão fique sobre o menu */
+    }
+
+    /* Estilos para o menu lateral */
+    .box-links {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Oculto inicialmente */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000; /* Garantir que o menu fique acima do conteúdo */
+    }
+
+    /* Mostrar o menu lateral quando ativo */
+    .box-links.active {
+        left: 0;
+    }
+
+    /* Estilos para o botão de fechar */
+    .close-menu {
+        font-size: 30px;
+        border: none;
+        background: none;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 769px) {
+    /* Estilos para o botão de menu em desktops (ocultar) */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Estilos para o menu lateral em desktops (não exibir) */
+    .box-links {
+        display: flex;
+        position: static;
+        left: auto;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: #000;
+        padding: 0;
+        transition: none;
+    }
+
+    /* Ajuste do conteúdo para desktops */
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
