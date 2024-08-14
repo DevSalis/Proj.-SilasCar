@@ -145,3 +145,23 @@ nextButton.onclick = () => {
     items[active].classList.add("active")
 
 }
+
+// Script para lidar com a abertura e fechamento do menu
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.querySelector('.menu-responsivo');
+    const boxLinks = document.getElementById('box-links');
+
+    menu.classList.toggle('active');
+    boxLinks.classList.toggle('active');
+});
+
+// Fechar o menu ao clicar em um link
+document.querySelectorAll('#box-links a').forEach(link => {
+    link.addEventListener('click', function() {
+        const menu = document.querySelector('.menu-responsivo');
+        const boxLinks = document.getElementById('box-links');
+        
+        menu.classList.remove('active');
+        boxLinks.classList.remove('active');
+    });
+});
