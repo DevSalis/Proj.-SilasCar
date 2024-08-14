@@ -421,8 +421,8 @@ footer {
 
 @media (max-width: 768px) {
 
-      /* Mostra o botão de menu */
-      .menu-responsivo {
+    /* Mostra o botão de menu */
+    .menu-responsivo {
         display: block;
     }
 
@@ -441,31 +441,36 @@ footer {
     }
 
     .box-links {
-        display: flex;
-        flex-direction: column;
         position: fixed;
         top: 0;
-        left: -250px;
-        /* Escondido à esquerda */
+        left: -250px; /* Escondido à esquerda */
         width: 250px;
         height: 100%;
-        background-color: #333;
-        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
         padding: 20px;
         transition: left 0.3s ease;
         z-index: 1000;
+
+        /* Organização em coluna */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px; /* Espaçamento de 5px entre os links */
+    }
+
+    .box-links a {
+       
+        text-decoration: none;
+        font-size: 18px;
+        width: 100%; /* Garante que cada link ocupe a largura completa do contêiner */
     }
 
     /* Quando o menu é ativado */
     .box-links.active {
-        left: 0;
-        /* Desliza para dentro */
+        left: 0; /* Desliza para dentro */
     }
-
-    /* Para esconder o .box-links quando o menu responsivo está fechado */
-    .menu-responsivo.active .box-links {
-        display: block;
-        left: 0;
-    }
-
 }
+
+
+
