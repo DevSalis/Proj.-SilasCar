@@ -1,4 +1,3 @@
-
 const minhaUl = document.querySelector('ul')
 const meuCatalogo = document.querySelector('#buttonShowAll')
 const meuDesconto = document.querySelector('#buttonOf')
