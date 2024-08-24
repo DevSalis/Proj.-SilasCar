@@ -1,6 +1,6 @@
 const menuOptions = [
 
-    { name: 'Gol', price: 70, popular: true, src: './assets/car 10.png' },
+    { name: 'Gol GTi', price: 100, popular: true, src: './assets/car 10.png' },
 
     { name: 'Cruze', price: 150, popular: false, src: './assets/car 11.png' },
 
