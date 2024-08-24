@@ -142,8 +142,9 @@ ul {
     gap: 3%;
     justify-content: center;
     background-image: radial-gradient(#a0739f, #687ea7);
-    padding: 5%;
+    padding: 3%;
     position: relative;
+    
 }
 
 li {
@@ -245,6 +246,7 @@ li:hover {
     background-image: radial-gradient(#a0739f, #687ea7);
     height: 100vh;
     position: relative;
+    
 
 
     & .list {
@@ -259,7 +261,7 @@ li:hover {
 
             & .cars {
                 position: absolute;
-                top: 50%;
+                top: 45%;
                 transform: translateY(-50%);
                 left: 15%;
                 width: 70%;
