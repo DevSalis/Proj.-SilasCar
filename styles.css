@@ -280,18 +280,14 @@ li:hover {
                 align-items: end;
                 gap: 20px;
 
-                & #carrossel-p1 {
-                    font-weight: bold;
-                }
-
                 & h2 {
                     font-size: 4em;
                     line-height: 1em;
                 }
 
                 & #carrossel-p2 {
-                    color: #b1aeae;
-                    font-size: 12px;
+                    color: #ffffff;
+                    font-size: 14px;
                     text-align: right;
                     max-width: 400px;
                 }
