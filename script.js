@@ -13,8 +13,8 @@ function mostrarTudo(newarray) {
            <li>
                <img class="cars" src="${element.src}">
                 <p>${element.name}</p>
-                <p class="valor">R$ ${element.price}</p>
-           </li>`
+                <p class="valor">R$ ${element.price.toLocaleString('pt-BR')}</p>
+           </li>`;
 
         minhaUl.innerHTML = minhaLi
     });
@@ -30,29 +30,24 @@ function blackFriday() {
 }
 
 function total() {
-
-
     const buyAll = menuOptions.reduce((acc, soma) => {
-        return acc + soma.price
-    }, 0)
+        return acc + soma.price;
+    }, 0);
 
     const of10 = menuOptions.map((of) => ({
         ...of,
         price: of.price * 0.9,
-    }))
+    }));
 
-    const ofTotal = of10.reduce((acc, curr) => acc + curr.price, 0)
-
+    const ofTotal = of10.reduce((acc, curr) => acc + curr.price, 0);
 
     minhaUl.innerHTML = `
     <li class="valor-total">
-         <p class="valor-total-1">Total  ${buyAll}</p>
-         <p class="valor-total-1">Total com desconto ${ofTotal}</p>
-    </li>`
-
-    console.log(buyAll, ofTotal)
-
+         <p class="valor-total-1">Total R$ ${buyAll.toLocaleString('pt-BR')}</p>
+         <p class="valor-total-1">Total com desconto R$ ${ofTotal.toLocaleString('pt-BR')}</p>
+    </li>`;
 }
+
 
 function barato() {
 
@@ -130,7 +125,7 @@ function setSlider() {
 }
 
 prevButton.onclick = () => {
-    
+
     list.style.setProperty("--calculation", -1)
     active = active + 1 > lastPosition ? 0 : active + 1
     setSlider()
