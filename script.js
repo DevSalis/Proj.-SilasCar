@@ -31,7 +31,9 @@ function blackFriday() {
 
 function total() {
     const buyAll = menuOptions.reduce((acc, soma) => {
-        return acc + soma.price;
+        // Ajusta o valor, multiplicando por 1000 se o valor for menor que 1000
+        const adjustedPrice = soma.price < 1000 ? soma.price * 1000 : soma.price;
+        return acc + adjustedPrice;
     }, 0);
 
     const of10 = menuOptions.map((of) => ({
@@ -39,12 +41,16 @@ function total() {
         price: of.price * 0.9,
     }));
 
-    const ofTotal = of10.reduce((acc, curr) => acc + curr.price, 0);
+    const ofTotal = of10.reduce((acc, curr) => {
+        // Ajusta o valor, multiplicando por 1000 se o valor for menor que 1000
+        const adjustedPrice = curr.price < 1000 ? curr.price * 1000 : curr.price;
+        return acc + adjustedPrice;
+    }, 0);
 
     minhaUl.innerHTML = `
     <li class="valor-total">
-         <p class="valor-total-1">Total R$ ${buyAll.toLocaleString('pt-BR')}</p>
-         <p class="valor-total-1">Total com desconto R$ ${ofTotal.toLocaleString('pt-BR')}</p>
+        <p class="valor-total-1">Total R$ ${buyAll.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
+        <p class="valor-total-1">Total com desconto R$ ${ofTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
     </li>`;
 }
 
