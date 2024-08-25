@@ -116,6 +116,7 @@ let prevButton = document.getElementById('prev')
 let nextButton = document.getElementById('next')
 let boxCarrossel = document.querySelector('.carrossel')
 let items = document.querySelectorAll('.list .item')
+let list = boxCarrossel.querySelector(".list")
 
 let active = 0
 let firstPosition = 0
@@ -128,9 +129,9 @@ function setSlider() {
 
 }
 
-
 prevButton.onclick = () => {
-
+    
+    list.style.setProperty("--calculation", -1)
     active = active + 1 > lastPosition ? 0 : active + 1
     setSlider()
     items[active].classList.add("active")
@@ -139,6 +140,7 @@ prevButton.onclick = () => {
 
 nextButton.onclick = () => {
 
+    list.style.setProperty("--calculation", 1)
     active = active - 1 < firstPosition ? lastPosition : active - 1
     setSlider()
     items[active].classList.add("active")

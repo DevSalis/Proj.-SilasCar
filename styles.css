@@ -54,7 +54,7 @@ a:hover {
     border-radius: 50%;
     padding: 0;
     width: 35px;
-   display: flex;
+    display: flex;
     margin-right: 10px;
 }
 
@@ -142,9 +142,9 @@ ul {
     gap: 3%;
     justify-content: center;
     background-image: radial-gradient(#a0739f, #687ea7);
-    padding: 3%;
-    
-    
+    padding: 2%;
+
+
 }
 
 li {
@@ -247,7 +247,7 @@ li:hover {
     background-image: radial-gradient(#a0739f, #687ea7);
     height: 100vh;
     position: relative;
-    
+
 
 
     & .list {
@@ -256,13 +256,15 @@ li:hover {
         height: 100%;
         position: relative;
 
+
         & .item {
+
             position: absolute;
             inset: 0;
 
             & .cars {
                 position: absolute;
-                top: 45%;
+                top: 49%;
                 transform: translateY(-50%);
                 left: 15%;
                 width: 70%;
@@ -348,9 +350,11 @@ li:hover {
 
 .carrossel {
     & .list {
+        --calculation: 1;
+
         & .item {
 
-            transform: translateX(100vw);
+            transform: translateX(calc(100vw * var(--calculation)));
             transition: 0.5s;
             opacity: 0;
 
@@ -367,7 +371,7 @@ li:hover {
                 h2,
                 #carrossel-p2,
                 #buttonShowAll {
-                    transform: translateX(200px);
+                    transform: translateX(calc(200px * var(--calculation)));
                     transition: 0.7s;
                     transition-delay: 0.3s;
                     opacity: 0;
@@ -442,10 +446,12 @@ footer {
     .box-links {
         position: fixed;
         top: 0;
-        left: -250px; /* Escondido à esquerda */
+        left: -250px;
+        /* Escondido à esquerda */
         width: 250px;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Fundo preto com transparência */
         padding: 20px;
         transition: left 0.3s ease;
         z-index: 1000;
@@ -455,21 +461,21 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 5px; /* Espaçamento de 5px entre os links */
+        gap: 5px;
+        /* Espaçamento de 5px entre os links */
     }
 
     .box-links a {
-       
+
         text-decoration: none;
         font-size: 18px;
-        width: 100%; /* Garante que cada link ocupe a largura completa do contêiner */
+        width: 100%;
+        /* Garante que cada link ocupe a largura completa do contêiner */
     }
 
     /* Quando o menu é ativado */
     .box-links.active {
-        left: 0; /* Desliza para dentro */
+        left: 0;
+        /* Desliza para dentro */
     }
 }
-
-
-
