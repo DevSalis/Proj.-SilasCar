@@ -408,6 +408,22 @@ li:hover {
     }
 }
 
+.box-formulario {
+    justify-content: center;
+    align-items: center;
+    background-color: #e2d3e2;
+}
+
+.button-form {
+    width: 40%;
+    position: relative;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #e2d3e2;
+}
+
 footer {
     background-color: #000000;
 }
