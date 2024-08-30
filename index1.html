@@ -246,14 +246,30 @@
         <div class="box-formulario">
             <button class="button-form-open">SOLICITE UM ORÇAMENTO</button>
             
-            <form class="to-form" action="https://formsubmit.co/philip.cost@hotmail.com" method="POST">
-                FALE CONOSCO
+            <form class="to-form" action="https://formsubmit.co/silasfelipe.dev@outlook.com" method="POST">
+                <img id="logo-form" src="./assets/logo-silasCar-2.png" alt="logo-silasCar">
                 <input placeholder="Nome" type="text" name="name" required>
                 <input placeholder="E-mail" type="email" name="email" required>
                 <input placeholder="Fone (00)0-0000-0000" type="tel" name="tel">
-                <textarea type="text" placeholder="Em que podemos ajudar?" name="info"></textarea>
-                <button type="button" class="button-form">ENVIAR</button>
+            
+                <label for="opcoes-car">Eu quero um:</label>
+                <select name="opcoes-car">
+                    <option value="opcao0">Outros</option>
+                    <option value="opcao1">Porsche</option>
+                    <option value="opcao2">Celta</option>
+                    <option value="opcao3">Ferrari</option>
+                    <option value="opcao4">Kwid</option>
+                </select>
+            
+                <label for="opcoes-service">Tenho interesse em:</label>
+                <select name="opcoes-service">
+                    <option value="opcao1">Agendar Teste drive</option>
+                    <option value="opcao2">Simulação de financiamento</option>
+                </select>
+            
+                <button type="submit" class="button-form">ENVIAR</button>
             </form>
+            
           
         </div>
        
