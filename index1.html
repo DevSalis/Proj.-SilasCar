@@ -45,7 +45,7 @@
             <button id="accept-button" disabled>Confirmar</button>
         </div>
     </div>
-    </section>
+    
 
     <main>
 
@@ -60,11 +60,11 @@
             <div class="list">
                 <div class="item active">
                     <div class="cars">
-                        <img src="./assets/car 10.png" alt="car1">
+                        <img src="./assets/car 10.png" alt="car-gol">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>GOL GTi</h2>
                         <P id="carrossel-p2">A Volkswagen anunciou o retorno do Gol GTI,<br>
                             um dos modelos icônicos da montadora,<br>como parte de uma edição especial
@@ -76,11 +76,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 11.png" alt="car1">
+                        <img src="./assets/car 11.png" alt="car-cruze">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>CRUZE</h2>
                         <P id="carrossel-p2">O Chevrolet Cruze apresenta um design aerodinâmico.
                             Um sedan compacto e sofisticado, que
@@ -93,11 +93,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 6.png" alt="car1">
+                        <img src="./assets/car 6.png" alt="car-mercedes">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>MERCEDES</h2>
                         <P id="carrossel-p2">A Mercedes-Benz
                             é conhecida por sua combinação de luxo,
@@ -113,11 +113,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 2.png" alt="car1">
+                        <img src="./assets/car 2.png" alt="car-audi">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>AUDI</h2>
                         <P id="carrossel-p2">Os carros da Audi são conhecidos por sua combinação de design elegante,
                             tecnologia de ponta, desempenho robusto e luxo refinado.
@@ -132,11 +132,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 4.png" alt="car1">
+                        <img src="./assets/car 4.png" alt="car-bmw">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>BMW</h2>
                         <P id="carrossel-p2">A BMW é uma marca automotiva alemã conhecida mundialmente
                             por seus carros que combinam luxo, desempenho esportivo e inovação tecnológica.<br>
@@ -151,11 +151,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 5.png" alt="car1">
+                        <img src="./assets/car 5.png" alt="car-camaro">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>CAMARO</h2>
                         <P id="carrossel-p2">O Chevrolet Camaro é um ícone automotivo que combina estilo arrojado,
                             desempenho poderoso e uma rica herança de muscle car americano.
@@ -169,11 +169,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 7.png" alt="car1">
+                        <img src="./assets/car 7.png" alt="car-ferrari">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>FERRARI</h2>
                         <P id="carrossel-p2">Desde a fundação da marca em 1947, a Ferrari tem se destacado pela criação
                             de supercarros que combinam design arrojado, tecnologia de ponta e uma experiência
@@ -186,11 +186,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 8.png" alt="car1">
+                        <img src="./assets/car 8.png" alt="car-porsche">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>PORSCHE</h2>
                         <P id="carrossel-p2">A Porsche, oferece uma linha
                             diversificada de veículos, mantendo a essência esportiva
@@ -203,11 +203,11 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 9.png" alt="car1">
+                        <img src="./assets/car 9.png" alt="car-celta">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>CELTA</h2>
                         <P id="carrossel-p2">O Celta foi desenvolvido para atender às necessidades dos consumidores
                             que buscavam um veículo simples,<br>confiável e econômico, ideal para uso urbano<br>
@@ -220,13 +220,14 @@
 
                 <div class="item">
                     <div class="cars">
-                        <img src="./assets/car 12.png" alt="car1">
+                        <img src="./assets/car 12.png" alt="car-kwid">
                     </div>
 
                     <div class="box-carrossel">
-                        
+
                         <h2>KWID</h2>
-                        <P id="carrossel-p2">O Renault Kwid é um carro compacto da categoria dos subcompactos, projetado para ser um veículo urbano<br>acessível e eficiente.</P>
+                        <P id="carrossel-p2">O Renault Kwid é um carro compacto da categoria dos subcompactos, projetado
+                            para ser um veículo urbano<br>acessível e eficiente.</P>
 
                     </div>
 
@@ -243,7 +244,7 @@
         </section>
 
         <div class="box-formulario">
-            <button class="button-form">SOLICITE UM ORÇAMENTO</button>
+            <button class="button-form-open" onclick="enterForm()">SOLICITE UM ORÇAMENTO</button>
         </div>
 
 
@@ -254,7 +255,18 @@
                 portifólio do desenvolvedor<br>
             </p>
         </footer>
+
+        <form class="to-form" action="https://formsubmit.co/philip.cost@hotmail.com" method="POST">
+            FALE CONOSCO
+            <input placeholder="Nome" type="text" name="name" required>
+            <input placeholder="E-mail" type="email" name="email" required>
+            <input placeholder="Fone (00)0-0000-0000" type="tel" name="tel">
+            <textarea type="text" placeholder="Em que podemos ajudar?" name="info"></textarea>
+            <button type="submit" class="button-form" onclick="exitForm()">ENVIAR</button>
+        </form>
     </main>
+
+
 
 </body>
 

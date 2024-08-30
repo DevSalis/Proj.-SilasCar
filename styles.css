@@ -416,7 +416,7 @@ li:hover {
     align-items: center;
 }
 
-.button-form {
+.button-form-open {
     width: 40%;
     position: relative;
     background-color: blueviolet;
@@ -433,6 +433,32 @@ li:hover {
     opacity: 0.9;
     background-color: #55f335;
     color: #000000;
+}
+
+.to-form {
+
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    font-size: 20px;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+    top: 15%;
+}
+
+.backgrund-mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
 footer {

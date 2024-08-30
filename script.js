@@ -167,3 +167,19 @@ document.querySelectorAll('#box-links a').forEach(link => {
         boxLinks.classList.remove('active');
     });
 });
+
+// logica do formulario
+
+let toForm = document.querySelector(".to-form")
+let exitFormBackgrund = document.querySelector(".backgrund-mascara-form")
+
+
+function enterForm() {
+    toForm.style.left = "28px"
+    exitFormBackgrund.style.visibility = "visible"
+}
+
+function exitForm() {
+    toForm.style.left = "-320px"
+    exitFormBackgrund.style.visibility = "hidden"
+}
