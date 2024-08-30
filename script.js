@@ -1,3 +1,24 @@
+// logica do formulario, entrada e saida
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.to-form');
+    const openButton = document.querySelector('.button-form-open');
+    const closeButton = document.querySelector('.button-form');
+
+    // Mostrar o formulário quando o botão 'Abrir Formulário' for clicado
+    openButton.addEventListener('click', function() {
+        form.style.display = 'flex';
+        console.log("esta funcionando?")
+    });
+
+    // Ocultar o formulário quando o botão 'Fechar Formulário' for clicado
+    closeButton.addEventListener('click', function() {
+        form.style.display = 'none';
+    });
+});
+
+//logica dos links do menu
+
 const minhaUl = document.querySelector('ul')
 const meuCatalogo = document.querySelector('#buttonShowAll')
 const meuDesconto = document.querySelector('#buttonOf')
@@ -54,12 +75,13 @@ function total() {
     </li>`;
 }
 
-
 function barato() {
 
     const popularCar = menuOptions.filter((maisBarato) => maisBarato.popular)
     mostrarTudo(popularCar)
 }
+
+//logica do popap e botão play e mudo
 
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('modal');
@@ -91,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Controle de play/pause
+
     playPauseButton.addEventListener('click', function () {
         if (isPlaying) {
             somEntrada.pause();
@@ -111,7 +134,7 @@ meuDesconto.addEventListener('click', blackFriday)
 minhaSoma.addEventListener('click', total)
 maisBarato.addEventListener('click', barato)
 
-
+//logica carrossel
 
 let prevButton = document.getElementById('prev')
 let nextButton = document.getElementById('next')
@@ -148,6 +171,8 @@ nextButton.onclick = () => {
 
 }
 
+//logica responsiva
+
 // Script para lidar com a abertura e fechamento do menu
 document.getElementById('menu-toggle').addEventListener('click', function() {
     const menu = document.querySelector('.menu-responsivo');
@@ -168,18 +193,6 @@ document.querySelectorAll('#box-links a').forEach(link => {
     });
 });
 
-// logica do formulario
-
-let toForm = document.querySelector(".to-form")
-let exitFormBackgrund = document.querySelector(".backgrund-mascara-form")
 
 
-function enterForm() {
-    toForm.style.left = "28px"
-    exitFormBackgrund.style.visibility = "visible"
-}
 
-function exitForm() {
-    toForm.style.left = "-320px"
-    exitFormBackgrund.style.visibility = "hidden"
-}

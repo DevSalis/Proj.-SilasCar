@@ -429,15 +429,14 @@ li:hover {
     border: none;
 }
 
-.button-form:hover {
+.button-form-open:hover {
     opacity: 0.9;
     background-color: #55f335;
     color: #000000;
 }
 
 .to-form {
-
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: aliceblue;
     padding: 20px;
@@ -445,21 +444,14 @@ li:hover {
     gap: 20px;
     font-size: 20px;
     position: fixed;
-    left: -320px;
-    transition: left 1s linear;
-    z-index: 4;
+    left: 50%; /* Centraliza em relação ao viewport */
     top: 15%;
+    transform: translateX(-50%); /* Move metade da largura do próprio elemento para a esquerda, centralizando */
+    transition: opacity 1s linear; 
 }
 
-.backgrund-mascara-form {
-    visibility: hidden;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-}
+
+
 
 footer {
     background-color: #000000;

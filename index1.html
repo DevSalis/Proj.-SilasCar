@@ -244,9 +244,19 @@
         </section>
 
         <div class="box-formulario">
-            <button class="button-form-open" onclick="enterForm()">SOLICITE UM ORÇAMENTO</button>
+            <button class="button-form-open">SOLICITE UM ORÇAMENTO</button>
+            
+            <form class="to-form" action="https://formsubmit.co/philip.cost@hotmail.com" method="POST">
+                FALE CONOSCO
+                <input placeholder="Nome" type="text" name="name" required>
+                <input placeholder="E-mail" type="email" name="email" required>
+                <input placeholder="Fone (00)0-0000-0000" type="tel" name="tel">
+                <textarea type="text" placeholder="Em que podemos ajudar?" name="info"></textarea>
+                <button type="button" class="button-form">ENVIAR</button>
+            </form>
+          
         </div>
-
+       
 
         <footer>
             <p id="paragrafo-footer">Projeto desenvolvido com as linguagem HTML, CSS e JS | Dev - Silas Felipe |
@@ -256,14 +266,7 @@
             </p>
         </footer>
 
-        <form class="to-form" action="https://formsubmit.co/philip.cost@hotmail.com" method="POST">
-            FALE CONOSCO
-            <input placeholder="Nome" type="text" name="name" required>
-            <input placeholder="E-mail" type="email" name="email" required>
-            <input placeholder="Fone (00)0-0000-0000" type="tel" name="tel">
-            <textarea type="text" placeholder="Em que podemos ajudar?" name="info"></textarea>
-            <button type="submit" class="button-form" onclick="exitForm()">ENVIAR</button>
-        </form>
+        
     </main>
 
 
