@@ -411,15 +411,40 @@ li:hover {
 .box-formulario {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: #e2d3e2;
     justify-content: center;
     align-items: center;
+   
+
+
+    & h2 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 5%;
+    }
+}
+
+#carros-pretos {
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+    margin-top: 4%;
+}
+
+#cordel-city {
+    display: block;
+    width: 100%;
+    
+    margin-bottom: 0;
+    position: relative;
 }
 
 #logo-form {
     width: 40%;
-    display: block; /* Garante que a margem auto funcione em elementos block */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block;
+    margin: 0 auto;
+    
 }
 
 .button-form-open {
@@ -433,6 +458,7 @@ li:hover {
     border-radius: 14px;
     cursor: pointer;
     border: none;
+    margin-top: 3%;
 }
 
 .button-form-open:hover {
@@ -442,7 +468,7 @@ li:hover {
 }
 
 .button-form {
-    
+
     position: relative;
     background-color: blueviolet;
     text-align: center;
@@ -469,17 +495,22 @@ li:hover {
     gap: 2px;
     font-size: 20px;
     position: fixed;
-    left: 50%; /* Centraliza em relação ao viewport */
+    left: 50%;
+    /* Centraliza em relação ao viewport */
     top: 15%;
-    transform: translateX(-50%); /* Move metade da largura do próprio elemento para a esquerda, centralizando */
+    transform: translateX(-50%);
+    /* Move metade da largura do próprio elemento para a esquerda, centralizando */
     transition: opacity 1s linear;
-    max-width: 500px; /* Para evitar que fique muito grande */
+    max-width: 500px;
+    /* Para evitar que fique muito grande */
     padding: 15px;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
 
-    & input, select, button {
+
+    & input,
+    select,
+    button {
         width: 100%;
         padding: 5px;
         margin: 10px 0;
@@ -495,7 +526,10 @@ li:hover {
 
 
 footer {
-    background-color: #000000;
+    background: #000000;
+    display: block;
+    width: 100%;
+    position: relative;
 }
 
 #paragrafo-footer {
