@@ -52,7 +52,7 @@ function blackFriday() {
 
 function total() {
     const buyAll = menuOptions.reduce((acc, soma) => {
-        // Ajusta o valor, multiplicando por 1000 se o valor for menor que 1000
+
         const adjustedPrice = soma.price < 1000 ? soma.price * 1000 : soma.price;
         return acc + adjustedPrice;
     }, 0);
@@ -63,7 +63,7 @@ function total() {
     }));
 
     const ofTotal = of10.reduce((acc, curr) => {
-        // Ajusta o valor, multiplicando por 1000 se o valor for menor que 1000
+       
         const adjustedPrice = curr.price < 1000 ? curr.price * 1000 : curr.price;
         return acc + adjustedPrice;
     }, 0);
@@ -94,19 +94,19 @@ document.addEventListener('DOMContentLoaded', function () {
     somEntrada.volume = 0.07;
     somEntrada.loop = true;
 
-    // Habilita o botão de aceitar termos quando o checkbox é marcado
+    
     acceptTerms.addEventListener('change', function () {
         acceptButton.disabled = !this.checked;
     });
 
-    // Ao clicar no botão de aceitar termos
+    
     acceptButton.addEventListener('click', function () {
-        modal.style.display = 'none'; // Esconde o modal
-        playPauseButton.style.display = 'block'; // Exibe os controles de áudio
+        modal.style.display = 'none';
+        playPauseButton.style.display = 'block';
 
         somEntrada.play().then(() => {
-            playPauseButton.innerHTML = '<span>&#x1F507;</span>'; // Atualiza o texto do botão
-            isPlaying = true; // Atualiza o estado de reprodução
+            playPauseButton.innerHTML = '<span>&#x1F507;</span>';
+            isPlaying = true;
         }).catch((error) => {
             console.error('Error playing audio:', error);
         });
@@ -117,10 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
     playPauseButton.addEventListener('click', function () {
         if (isPlaying) {
             somEntrada.pause();
-            playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; // Atualiza o texto do botão para o emoji de "Play"
+            playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; 
         } else {
             somEntrada.play().then(() => {
-                playPauseButton.innerHTML = '<span>&#x1F507;</span>'; // Atualiza o texto do botão para o emoji de "Pause"
+                playPauseButton.innerHTML = '<span>&#x1F507;</span>';
             }).catch((error) => {
                 console.error('Error resuming audio:', error);
             });
@@ -171,27 +171,6 @@ nextButton.onclick = () => {
 
 }
 
-//logica responsiva
-
-// Script para lidar com a abertura e fechamento do menu
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    const menu = document.querySelector('.menu-responsivo');
-    const boxLinks = document.getElementById('box-links');
-
-    menu.classList.toggle('active');
-    boxLinks.classList.toggle('active');
-});
-
-// Fechar o menu ao clicar em um link
-document.querySelectorAll('#box-links a').forEach(link => {
-    link.addEventListener('click', function() {
-        const menu = document.querySelector('.menu-responsivo');
-        const boxLinks = document.getElementById('box-links');
-        
-        menu.classList.remove('active');
-        boxLinks.classList.remove('active');
-    });
-});
 
 
 

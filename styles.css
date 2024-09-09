@@ -434,7 +434,7 @@ li:hover {
 }
 
 #cordel-city {
-   
+
     width: 100%;
     margin-bottom: 0;
     position: relative;
@@ -520,9 +520,6 @@ li:hover {
     }
 }
 
-
-
-
 footer {
     background: #000000;
     display: block;
@@ -539,58 +536,128 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* Mostra o botão de menu */
-    .menu-responsivo {
-        display: block;
+    header {
+        flex-direction: column;
+        position: relative;
+
+        & #img-logo {
+            width: 50%;
+            margin-left: -7%;
+            margin-right: 3%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        & #img-PE,
+        #img-home {
+            display: none;
+        }
+
     }
 
-    .menu-toggle {
-        display: block;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        font-size: 30px;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 1001;
+
+
+
+
+    .box-text-home h1 {
+        font-size: 1.5rem;
+    }
+
+    #button-pag-1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
     }
 
     .box-links {
-        position: fixed;
-        top: 0;
-        left: -250px;
-        /* Escondido à esquerda */
-        width: 250px;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        /* Fundo preto com transparência */
-        padding: 20px;
-        transition: left 0.3s ease;
-        z-index: 1000;
-
-        /* Organização em coluna */
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 5px;
-        /* Espaçamento de 5px entre os links */
+        align-items: center;
+        gap: 15px;
     }
 
-    .box-links a {
+    nav {
+        text-align: center;
+    }
 
-        text-decoration: none;
-        font-size: 18px;
+    /* Modal adjustments */
+    .modal-content {
+        padding: 10px;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    /* Formulário */
+    form.to-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         width: 100%;
-        /* Garante que cada link ocupe a largura completa do contêiner */
     }
 
-    /* Quando o menu é ativado */
-    .box-links.active {
-        left: 0;
-        /* Desliza para dentro */
+    form input,
+    form select,
+    form button {
+        width: 90%;
+    }
+}
+
+/* Responsividade para telas menores (máx. 480px) */
+@media (max-width: 480px) {
+   
+
+    header {
+        flex-direction: column;
+
+        & #img-PE,
+        #img-home {
+            display: none;
+        }
+
+        & #img-logo {
+            width: 100%;
+           
+        }
+
+    }
+
+    .box-text-home h1 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #button-pag-1 {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .box-carrossel h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustar o carrossel para ser mais flexível */
+    .item {
+        width: 100%;
+    }
+
+    .cars img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-formulario h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    form input,
+    form select,
+    form button {
+        font-size: 0.9rem;
     }
 }
