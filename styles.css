@@ -568,9 +568,9 @@ footer {
             display: flex;
             flex-direction: column;
 
-            & h1 {
+            & #h1-responsivo {
                 font-size: 22px;
-                
+                width: 100%;
             }
 
             & #button-pag-1 {
@@ -579,10 +579,11 @@ footer {
             }
         }
 
-        & video {
+        & #clip-responsivo {
             width: 100%;
-            margin-top: 20px;
-            display: block;
+            margin-top: 60%;
+           
+           
         }
     }
 
