@@ -171,6 +171,27 @@ nextButton.onclick = () => {
 
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const boxLinks = document.querySelector('.box-links');
+    const links = document.querySelectorAll('.box-links a');
+
+    // Função para abrir/fechar o menu
+    hamburger.addEventListener('click', function() {
+        boxLinks.classList.toggle('show');
+        hamburger.classList.toggle('open');
+    });
+
+    // Fechar o menu quando um link for clicado
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            boxLinks.classList.remove('show');
+            hamburger.classList.remove('open');
+        });
+    });
+});
+
+
 
 
 

@@ -598,20 +598,90 @@ footer {
 
     /*RESPONSIVIDADE PAGINA PRINCIPAL*/
 
-
-    .box-links {
+    body {
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 15px;
     }
 
     nav {
         text-align: center;
+        padding: 0;
+
+        & .hamburger {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            z-index: 101;
+            cursor: pointer;
+    
+            & div {
+                width: 30px;
+                height: 3px;
+                background-color: #fff;
+                margin: 6px 0;
+                transition: 0.4s;
+            }   
+        }
+
+        & .box-links {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo para o menu no mobile */
+            position: absolute;
+            top: 0;
+            padding-top: 0;
+            right: 0;
+            height: 70vh; /* Preencher a altura total da tela */
+            width: 50%; /* Ajuste o tamanho conforme necessário */
+            z-index: 100; /* Trazer o menu para frente */
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+            
+    
+            & #logo-2 {
+                display: none;
+            }
+    
+            & a {
+                width: 80%;
+                margin-top: 0;
+            }
+
+            & #play-pause-button {
+                margin-top: 50%;
+            }
+        }
+
+    }
+
+    .box-links.show {
+        transform: translateX(0);
+    }
+
+    .hamburger.open div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.open div:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.open div:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .box-links.show {
+        display: flex;
     }
 
     /* Modal adjustments */
     .modal-content {
+        position: relative;
         padding: 10px;
         width: 90%;
         font-size: 0.9rem;
@@ -624,11 +694,13 @@ footer {
         align-items: center;
         gap: 10px;
         width: 100%;
+        position: relative;
     }
 
     form input,
     form select,
     form button {
         width: 90%;
+        position: relative;
     }
 }
