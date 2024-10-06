@@ -13,9 +13,14 @@ body {
     overflow-x: hidden;
 }
 
+#logo-2-responsivo {
+    display: none;
+}
+
 .menu-responsivo {
     display: none;
 }
+
 
 .box-links {
     display: flex;
@@ -617,22 +622,25 @@ footer {
 
     /*RESPONSIVIDADE PAGINA PRINCIPAL*/
 
-    body {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
     nav {
         text-align: center;
         padding: 0;
+        background-color: #000000;
+
+        #logo-2-responsivo {
+            display: block;
+            position: relative;
+            width: 80%;
+            background-color: #000000;
+            padding: 5%;
+            
+        }
 
         & .hamburger {
             display: block;
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 30px;
+            right: 20px;
             width: 40px;
             z-index: 101;
             cursor: pointer;
