@@ -631,6 +631,7 @@ footer {
             display: block;
             position: relative;
             width: 80%;
+            height: 110px;
             background-color: #000000;
             padding: 5%;
             
@@ -653,41 +654,49 @@ footer {
                 transition: 0.4s;
             }   
         }
-
         & .box-links {
-            display: none;
+           
             flex-direction: column;
             gap: 5px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo para o menu no mobile */
             position: absolute;
             top: 0;
-            padding-top: 0;
             right: 0;
             height: 100vh; /* Preencher a altura total da tela */
-            width: 100vw; /* Ocupar toda a largura da tela */
+            width: 60vw; /* Ocupa 50% da largura da tela */
             z-index: 100;
-            transition: transform 0.3s ease-in-out;
-            transform: translateX(100%);
+            transition: transform 1s ease, opacity 2s ease, visibility 0s 2s; /* Transição suave de 2s */
+            transform: translateX(100%); /* Esconde o menu à direita */
             overflow: hidden;
-
+           
+        
             & #logo-2 {
                 display: none;
             }
-
-            & a {
-                width: 80%;
-                margin-top: 0;
-            }
-
+        
             & #play-pause-button {
                 margin-top: 50%;
             }
         }
+        
     }
 
+    .box-links a {
+        width: 80%;
+        margin-top: 0;
+        cursor: pointer;
+    }
+    
+    .box-links a:hover {
+        opacity: 0.9;
+        background-color: #c6eef6;
+        color: #0206ff;
+    }
+    
     .box-links.show {
-        transform: translateX(0);
-        display: flex;
+        transform: translateX(0); /* Anima o deslizamento */
+        visibility: visible; /* Torna o menu visível */
+        opacity: 1; /* Aparece suavemente */
     }
 
     .hamburger.open div:nth-child(1) {
