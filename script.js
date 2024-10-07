@@ -1,18 +1,18 @@
 // logica do formulario, entrada e saida
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.to-form');
     const openButton = document.querySelector('.button-form-open');
     const closeButton = document.querySelector('.button-form');
 
     // Mostrar o formulário quando o botão 'Abrir Formulário' for clicado
-    openButton.addEventListener('click', function() {
+    openButton.addEventListener('click', function () {
         form.style.display = 'flex';
         console.log("esta funcionando?")
     });
 
     // Ocultar o formulário quando o botão 'Fechar Formulário' for clicado
-    closeButton.addEventListener('click', function() {
+    closeButton.addEventListener('click', function () {
         form.style.display = 'none';
     });
 });
@@ -63,7 +63,7 @@ function total() {
     }));
 
     const ofTotal = of10.reduce((acc, curr) => {
-       
+
         const adjustedPrice = curr.price < 1000 ? curr.price * 1000 : curr.price;
         return acc + adjustedPrice;
     }, 0);
@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', function () {
     somEntrada.volume = 0.07;
     somEntrada.loop = true;
 
-    
+
     acceptTerms.addEventListener('change', function () {
         acceptButton.disabled = !this.checked;
     });
 
-    
+
     acceptButton.addEventListener('click', function () {
         modal.style.display = 'none';
         playPauseButton.style.display = 'block';
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
     playPauseButton.addEventListener('click', function () {
         if (isPlaying) {
             somEntrada.pause();
-            playPauseButton.innerHTML = '<span>&#x1F50A;</span>'; 
+            playPauseButton.innerHTML = '<span>&#x1F50A;</span>';
         } else {
             somEntrada.play().then(() => {
                 playPauseButton.innerHTML = '<span>&#x1F507;</span>';
@@ -171,25 +171,29 @@ nextButton.onclick = () => {
 
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const boxLinks = document.querySelector('.box-links');
-    const links = document.querySelectorAll('.box-links a');
+const hamburger = document.querySelector('.hamburger');
+const boxLinks = document.querySelector('.box-links');
+const links = document.querySelectorAll('.box-links a');
 
-    // Função para abrir/fechar o menu
-    hamburger.addEventListener('click', function() {
-        boxLinks.classList.toggle('show');
-        hamburger.classList.toggle('open');
-    });
+hamburger.addEventListener('click', function () {
+    boxLinks.classList.toggle('show');
+});
 
-    // Fechar o menu quando um link for clicado
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            boxLinks.classList.remove('show');
-            hamburger.classList.remove('open');
-        });
+links.forEach(link => {
+    link.addEventListener('click', function () {
+        boxLinks.classList.remove('show');
     });
 });
+
+// Adicionando um evento para garantir que o display seja alterado apenas depois que a animação terminar
+boxLinks.addEventListener('transitionend', function () {
+    if (!boxLinks.classList.contains('show')) {
+        boxLinks.style.display = 'none'; // Esconde o menu quando não estiver visível
+    } else {
+        boxLinks.style.display = 'flex'; // Mostra o menu quando estiver visível
+    }
+});
+
 
 
 
