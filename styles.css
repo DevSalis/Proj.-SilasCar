@@ -148,7 +148,6 @@ ul {
     justify-content: center;
     background-image: radial-gradient(#a0739f, #687ea7);
     padding: 2%;
-
 }
 
 li {
@@ -548,10 +547,12 @@ footer {
     }
 
     /* Prevent horizontal scroll */
-    body, html {
+    body,
+    html {
         width: 100vw;
         height: 100vh;
-        overflow-x: hidden; /* Evita o scroll horizontal */
+        overflow-x: hidden;
+        /* Evita o scroll horizontal */
         margin: 0;
         padding: 0;
     }
@@ -561,7 +562,8 @@ footer {
         height: 100vh;
         background-color: #000000;
         width: 100vw;
-        overflow-x: hidden; /* Garantir que não haja overflow horizontal */
+        overflow-x: hidden;
+        /* Garantir que não haja overflow horizontal */
     }
 
     header {
@@ -571,7 +573,8 @@ footer {
         height: 20%;
         flex-direction: column;
         justify-content: center;
-        overflow: hidden; /* Garante que imagens grandes não causem overflow */
+        overflow: hidden;
+        /* Garante que imagens grandes não causem overflow */
 
         & #img-logo {
             margin: 0;
@@ -579,7 +582,8 @@ footer {
             padding: 20px;
         }
 
-        & #img-PE, #img-home {
+        & #img-PE,
+        #img-home {
             display: none;
         }
     }
@@ -589,13 +593,15 @@ footer {
         flex-direction: column;
         align-items: center;
         position: relative;
-        width: 100%; /* Garante que ocupe 100% da largura */
+        width: 100%;
+        /* Garante que ocupe 100% da largura */
 
         & .box-text-home {
             display: flex;
             flex-direction: column;
             width: 90%;
-            max-width: 100%; /* Garante que não exceda a largura */
+            max-width: 100%;
+            /* Garante que não exceda a largura */
 
             & #h1-responsivo {
                 font-size: 20px;
@@ -612,7 +618,8 @@ footer {
         & #clip-responsivo {
             width: 100%;
             margin-top: 90%;
-            margin-left: 0; /* Remove deslocamento lateral */
+            margin-left: 0;
+            /* Remove deslocamento lateral */
         }
     }
 
@@ -634,7 +641,7 @@ footer {
             height: 110px;
             background-color: #000000;
             padding: 5%;
-            
+
         }
 
         & .hamburger {
@@ -652,10 +659,11 @@ footer {
                 background-color: #fff;
                 margin: 6px 0;
                 transition: 0.4s;
-            }   
+            }
         }
+
         & .box-links {
-           
+           display: none;
             flex-direction: column;
             gap: 5px;
             background-color: rgba(0, 0, 0, 0.8); /* Fundo para o menu no mobile */
@@ -694,6 +702,7 @@ footer {
     }
     
     .box-links.show {
+        display: flex;
         transform: translateX(0); /* Anima o deslizamento */
         visibility: visible; /* Torna o menu visível */
         opacity: 1; /* Aparece suavemente */
