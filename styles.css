@@ -633,7 +633,7 @@ footer {
         text-align: center;
         padding: 0;
         background-color: #000000;
-        
+
 
         #logo-2-responsivo {
             display: block;
@@ -642,7 +642,7 @@ footer {
             height: 110px;
             background-color: #000000;
             padding: 5%;
-            
+
         }
 
         & .hamburger {
@@ -778,18 +778,34 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative;
-       width: 75%;
+        width: 75%;
         background: #000000;
         margin: auto;
-        
-        
     }
 
-   
+.carrossel {
+    position: relative;
 
-    .box-carrossel {
-        margin-top: 10%;
+    & .list {
+        position: relative;
     }
+
+    & .arrows { 
+        width: 80vw;
+       
+        & button {
+            width: 40px;
+            height: 40px;
+           
+            & img {
+                width: 20px;   
+            }
+        }
+
+    }
+}
+
+ 
 
 
     /* Formulario oculto */
