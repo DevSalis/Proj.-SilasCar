@@ -544,6 +544,11 @@ footer {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+
+        & br {
+            display: none;
+        }
+
     }
 
     /* Prevent horizontal scroll */
@@ -784,47 +789,95 @@ footer {
     }
 
     .valor-total {
-        
+
         border: 4px solid #3a06f5;
         border-radius: 5px;
         padding: 10px;
         width: 300px;
-       font-size: 15px;
+        font-size: 15px;
         background-color: rgb(207, 201, 188);
         transform: none;
     }
-    
 
     .carrossel {
-        position: relative;
 
-        & .arrows {
-            width: 80vw;
+        & .list {
+            & .item {
+                & .cars {
+                    top: 65%;
+                    width: 120%;
+                    left: -25px;
+                }
 
-            & button {
-                width: 40px;
-                height: 40px;
+                & .box-carrossel {
+                    /* Centraliza apenas horizontalmente */
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    /* Alinha horizontalmente ao centro */
+                    text-align: center;
+                    /* Centraliza o texto */
+                    width: 100%;
+                    /* Garante que a largura ocupe 100% da tela */
+                    height: auto;
+                    /* Permite que a altura se ajuste automaticamente */
+                    top: 10%;
 
-                & img {
-                    width: 20px;
+                    & h2 {
+                        font-size: 3em;
+                        /* Ajuste do tamanho da fonte se necessário */
+                        margin: 0;
+                        /* Remove margens do título para centralização precisa */
+                    }
+
+                    & #carrossel-p2 {
+                        font-size: 17px;
+                        /* Ajuste do tamanho da fonte se necessário */
+                        max-width: 100%;
+                        /* Garante que o texto não fique muito largo */
+                        margin: 0;
+                        text-align: left;
+
+                    }
                 }
             }
 
+            &::before {
+                display: none;
+            }
         }
     }
+}
 
+& .arrows {
+    width: 100vw;
+    margin-top: -5%;
 
+    & button {
+        width: 40px;
+        height: 40px;
 
-
-    /* Formulario oculto */
-    .formulario {
-        display: none;
-        /* Esconde o formulário */
+        & img {
+            width: 20px;
+        }
     }
+}
 
-    /* Quando o botão é clicado, exibe o formulário */
-    .button-form.active+.formulario {
-        display: block;
-    }
 
+
+
+
+
+
+
+
+/* Formulario oculto */
+.formulario {
+    display: none;
+    /* Esconde o formulário */
+}
+
+/* Quando o botão é clicado, exibe o formulário */
+.button-form.active+.formulario {
+    display: block;
 }
