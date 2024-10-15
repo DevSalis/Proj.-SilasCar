@@ -302,21 +302,14 @@ li:hover {
 
         }
 
-        &::before {
-            content: "";
-            position: absolute;
-            height: 200px;
-            width: 100%;
-            top: 50%;
-            border-top: 1px solid #fff;
-        }
+       
     }
 
     & .arrows {
         display: flex;
-        width: 70vw;
+        width: 75vw;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -25px);
         justify-content: space-between;
@@ -801,6 +794,20 @@ footer {
 
     .carrossel {
 
+        & .arrows {
+            width: 80vw;
+            margin-top: -30%;
+        
+            & button {
+                width: 40px;
+                height: 40px;
+        
+                & img {
+                    width: 20px;
+                }
+            }
+        }
+
         & .list {
             & .item {
                 & .cars {
@@ -821,7 +828,7 @@ footer {
                     /* Garante que a largura ocupe 100% da tela */
                     height: auto;
                     /* Permite que a altura se ajuste automaticamente */
-                    top: 10%;
+                    top: 3%;
 
                     & h2 {
                         font-size: 3em;
@@ -831,7 +838,7 @@ footer {
                     }
 
                     & #carrossel-p2 {
-                        font-size: 17px;
+                        font-size: 16px;
                         /* Ajuste do tamanho da fonte se necessário */
                         max-width: 100%;
                         /* Garante que o texto não fique muito largo */
@@ -841,27 +848,11 @@ footer {
                     }
                 }
             }
-
-            &::before {
-                display: none;
-            }
         }
     }
 }
 
-& .arrows {
-    width: 100vw;
-    margin-top: -5%;
 
-    & button {
-        width: 40px;
-        height: 40px;
-
-        & img {
-            width: 20px;
-        }
-    }
-}
 
 
 
