@@ -676,7 +676,7 @@ footer {
             width: 60vw;
             /* Ocupa 60% da largura da tela */
             z-index: 100;
-            transition: transform 2s ease, opacity 2s ease;
+            transition: transform 1s ease, opacity 1s ease;
             /* Duração da transição de 1 segundo */
             transform: translateX(100%);
             /* Esconde o menu à direita */
@@ -684,7 +684,7 @@ footer {
             /* Inicialmente invisível */
             visibility: hidden;
             /* Oculta o menu quando não está visível */
-            overflow: hidden;
+            
 
 
             & #logo-2 {
@@ -717,7 +717,7 @@ footer {
         /* Anima o deslizamento */
         visibility: visible;
         /* Torna o menu visível */
-        opacity: 2;
+        opacity: 1;
         /* Aparece suavemente */
     }
 
@@ -793,7 +793,7 @@ footer {
     }
 
     .carrossel {
-
+        
         & .arrows {
             width: 80vw;
             margin-top: -30%;
@@ -852,15 +852,33 @@ footer {
     }
 }
 
+.box-formulario {
+   
+    & h2 {
+        width: 80%;
+        margin-top: -20%;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30%;
+    }
 
+    & .button-form-open {
+        width: 70%;
+        margin-bottom: 10%;
+    }
 
+    & #carros-pretos {
+        width: 90%;
+        height: 12%;
+        margin-bottom: 10%;
+    }
+}
 
-
-
-
-
-
-
+footer {
+    margin-top: -48%;
+    height: 20%;
+    padding: 30px 20px;
+}
 
 /* Formulario oculto */
 .formulario {
@@ -871,4 +889,12 @@ footer {
 /* Quando o botão é clicado, exibe o formulário */
 .button-form.active+.formulario {
     display: block;
+}
+
+#logo-form {
+    display: none;
+}
+
+.to-form {
+    margin-top: 10%;
 }
