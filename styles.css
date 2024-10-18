@@ -539,10 +539,6 @@ footer {
         margin: 0;
         padding: 0;
 
-        & br {
-            display: none;
-        }
-
     }
 
     /* Prevent horizontal scroll */
@@ -812,11 +808,13 @@ footer {
             & .item {
                 & .cars {
                     top: 65%;
-                    width: 120%;
+                    width: 125%;
                     left: -25px;
                 }
 
                 & .box-carrossel {
+
+                    
                     /* Centraliza apenas horizontalmente */
                     display: flex;
                     flex-direction: column;
@@ -845,6 +843,10 @@ footer {
                         margin: 0;
                         text-align: left;
 
+                        br {
+                            display: none;
+                        }
+
                     }
                 }
             }
@@ -853,7 +855,10 @@ footer {
 }
 
 .box-formulario {
-   
+    br {
+        display: none;
+    }
+
     & h2 {
         width: 80%;
         margin-top: -50%;
