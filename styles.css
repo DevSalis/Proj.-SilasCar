@@ -30,6 +30,7 @@ body {
     gap: 20px;
     position: relative;
     background-color: rgb(0, 0, 0);
+    
 }
 
 a {
@@ -548,11 +549,12 @@ footer {
     body,
     html {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         overflow-x: hidden;
         /* Evita o scroll horizontal */
         margin: 0;
         padding: 0;
+        
     }
 
     /*RESPONSIVIDADE PAGINA HOME*/
@@ -631,6 +633,7 @@ footer {
         text-align: center;
         padding: 0;
         background-color: #000000;
+        
 
 
         #logo-2-responsivo {
@@ -662,15 +665,15 @@ footer {
         }
 
         & .box-links {
-            display: none;
+            display: flex;
             /* Oculta o menu inicialmente */
             flex-direction: column;
             gap: 5px;
             background-color: rgba(0, 0, 0, 0.8);
             /* Fundo para o menu no mobile */
-            position: absolute;
+            position: fixed;
             top: 0;
-            right: 0;
+            right: -100%;
             height: 100vh;
             /* Preencher a altura total da tela */
             width: 60vw;
@@ -678,15 +681,14 @@ footer {
             z-index: 100;
             transition: transform 1s ease, opacity 1s ease;
             /* Duração da transição de 1 segundo */
-            transform: translateX(100%);
+            transform: translateX(100vw);
             /* Esconde o menu à direita */
             opacity: 0;
             /* Inicialmente invisível */
             visibility: hidden;
             /* Oculta o menu quando não está visível */
+            overflow: hidden;
             
-
-
             & #logo-2 {
                 display: none;
             }
@@ -711,14 +713,14 @@ footer {
     }
 
     .box-links.show {
-        display: flex;
-        /* Exibe o menu quando ativado */
+        right: 0;
         transform: translateX(0);
         /* Anima o deslizamento */
         visibility: visible;
         /* Torna o menu visível */
         opacity: 1;
         /* Aparece suavemente */
+       
     }
 
     .hamburger.open div:nth-child(1) {
@@ -733,9 +735,7 @@ footer {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 
-    .box-links.show {
-        display: flex;
-    }
+  
 
     /* Modal adjustments */
 
@@ -856,10 +856,10 @@ footer {
    
     & h2 {
         width: 80%;
-        margin-top: -20%;
+        margin-top: -50%;
         font-size: 20px;
         text-align: center;
-        margin-bottom: 30%;
+        margin-bottom: 20%;
     }
 
     & .button-form-open {
@@ -875,9 +875,9 @@ footer {
 }
 
 footer {
-    margin-top: -48%;
+    margin-top: -63%;
     height: 20%;
-    padding: 30px 20px;
+    padding: 10px 30px;
 }
 
 /* Formulario oculto */
@@ -897,4 +897,5 @@ footer {
 
 .to-form {
     margin-top: 10%;
+    width: 80%;
 }

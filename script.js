@@ -176,7 +176,7 @@ const boxLinks = document.querySelector('.box-links');
 const links = document.querySelectorAll('.box-links a');
 
 hamburger.addEventListener('click', function () {
-    boxLinks.classList.toggle('show');
+   boxLinks.classList.toggle('show');
 });
 
 links.forEach(link => {
@@ -188,9 +188,11 @@ links.forEach(link => {
 // Adicionando um evento para garantir que o display seja alterado apenas depois que a animação terminar
 boxLinks.addEventListener('transitionend', function () {
     if (!boxLinks.classList.contains('show')) {
-        boxLinks.style.display = 'none'; // Esconde o menu quando não estiver visível
-    } else {
-        boxLinks.style.display = 'flex'; // Mostra o menu quando estiver visível
+        boxLinks.style.visibility = 'hidden'; // Garantir que fique oculto quando a animação termina
+    }
+    else {
+        // Quando o menu está visível, garantir que ele seja mostrado corretamente
+        boxLinks.style.visibility = 'visible';
     }
 });
 
