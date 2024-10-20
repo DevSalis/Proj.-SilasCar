@@ -16,7 +16,8 @@ body {
     overflow-x: hidden;
 }
 
-#logo-2-responsivo, .menu-responsivo{
+#logo-2-responsivo,
+.menu-responsivo {
     display: none;
 }
 
@@ -74,7 +75,7 @@ header {
             background-color: #4bd7f3;
             font-size: 25px;
         }
-        
+
         #button-pag-1:hover {
             opacity: 0.9;
             background-color: #55f335;
@@ -134,12 +135,54 @@ header {
             cursor: pointer;
             border-radius: 4px;
         }
-        
+
         #accept-button:hover {
             opacity: 0.9;
             background-color: #55f335;
             color: #000000;
         }
+    }
+}
+
+nav {
+
+    & .box-links {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        background-color: rgb(0, 0, 0);
+
+        & #logo-2 {
+            width: 20%;
+        }
+
+        & a {
+            cursor: pointer;
+            width: 13%;
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+            background-color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            & span {
+                font-size: 25px;
+            }
+        }
+        
+        a:hover {
+            opacity: 0.9;
+            background-color: #c6eef6;
+            color: #0206ff;
+        }
+
     }
 }
 
@@ -149,42 +192,13 @@ header {
 
 
 
-span {
-    font-size: 25px;
-}
 
 
 
-.box-links {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    background-color: rgb(0, 0, 0);
-    
-}
 
-a {
-    cursor: pointer;
-    width: 13%;
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-    background-color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-a:hover {
-    opacity: 0.9;
-    background-color: #c6eef6;
-    color: #0206ff;
-}
+
+
 
 
 #play-pause-button {
@@ -203,9 +217,7 @@ a:hover {
 
 
 
-#logo-2 {
-    width: 20%;
-}
+
 
 
 
@@ -221,7 +233,7 @@ ul {
     justify-content: center;
     background-image: radial-gradient(#a0739f, #687ea7);
     padding: 2%;
-    
+
 }
 
 li {
@@ -329,7 +341,7 @@ li:hover {
 
         }
 
-       
+
     }
 
     & .arrows {
@@ -634,7 +646,7 @@ footer {
         text-align: center;
         padding: 0;
         background-color: #000000;
-        
+
 
 
         #logo-2-responsivo {
@@ -689,7 +701,7 @@ footer {
             visibility: hidden;
             /* Oculta o menu quando não está visível */
             overflow: hidden;
-            
+
             & #logo-2 {
                 display: none;
             }
@@ -721,7 +733,7 @@ footer {
         /* Torna o menu visível */
         opacity: 1;
         /* Aparece suavemente */
-       
+
     }
 
     .hamburger.open div:nth-child(1) {
@@ -736,7 +748,7 @@ footer {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 
-  
+
 
     /* Modal adjustments */
 
@@ -794,15 +806,15 @@ footer {
     }
 
     .carrossel {
-        
+
         & .arrows {
             width: 80vw;
             margin-top: -30%;
-        
+
             & button {
                 width: 40px;
                 height: 40px;
-        
+
                 & img {
                     width: 20px;
                 }
@@ -819,7 +831,7 @@ footer {
 
                 & .box-carrossel {
 
-                    
+
                     /* Centraliza apenas horizontalmente */
                     display: flex;
                     flex-direction: column;
