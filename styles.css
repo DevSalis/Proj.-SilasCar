@@ -6,21 +6,95 @@
     font-family: "Poppins", sans-serif;
 }
 
+/*STYLES GERAL DE TELA DESKTOP E MOBILE*/
+
 body {
+    padding: 0;
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
 }
 
-#logo-2-responsivo {
+#logo-2-responsivo, .menu-responsivo{
     display: none;
 }
 
-.menu-responsivo {
-    display: none;
+/*STYLES PAG-1*/
+
+header {
+    display: flex;
+    height: 35%;
+    background: url("./assets/Fundo-xadrez.png");
+
+    & #img-PE {
+        width: 150px;
+        height: 100%;
+    }
+
+    & #img-logo {
+        width: 50%;
+        margin-left: -7%;
+        margin-right: 3%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    & #img-home {
+        width: 38%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
 
+.home {
+    display: flex;
+    background-color: #000000;
+    height: 60vh;
+
+    & .box-text-home {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 12%;
+        gap: 25px;
+        width: 45%;
+        position: absolute;
+
+        & #h1-responsivo {
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        #button-pag-1 {
+            width: 40%;
+            background-color: #4bd7f3;
+            font-size: 25px;
+        }
+        
+        #button-pag-1:hover {
+            opacity: 0.9;
+            background-color: #55f335;
+            color: #000000;
+        }
+    }
+
+    video {
+        width: 60%;
+        height: 100%;
+        margin-left: 40%;
+        position: relative;
+    }
+}
+
+/*STYLES PAG-2*/
+
+span {
+    font-size: 25px;
+}
 
 .box-links {
     display: flex;
@@ -64,82 +138,21 @@ a:hover {
     margin-right: 10px;
 }
 
-span {
-    font-size: 25px;
-}
 
-#button-pag-1 {
-    width: 40%;
-    background-color: #4bd7f3;
-    font-size: 25px;
-}
 
-#button-pag-1:hover {
-    opacity: 0.9;
-    background-color: #55f335;
-    color: #000000;
-}
 
-header {
-    display: flex;
-    height: 35%;
-    background: url("./assets/Fundo-xadrez.png");
-}
 
-#img-PE {
-    width: 150px;
-    height: 100%;
 
-}
-
-#img-logo {
-    width: 50%;
-    margin-left: -7%;
-    margin-right: 3%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 #logo-2 {
     width: 20%;
 }
 
-#img-home {
-    width: 38%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
 
-.home {
-    display: flex;
-    background-color: #000000;
-    height: 60vh;
-}
 
-.box-text-home {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 12%;
-    gap: 25px;
-    width: 45%;
-    position: absolute;
-}
 
-h1 {
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
 
-video {
-    width: 60%;
-    height: 100%;
-    margin-left: 40%;
-    position: relative;
-}
+
 
 ul {
     list-style: none;
@@ -149,6 +162,7 @@ ul {
     justify-content: center;
     background-image: radial-gradient(#a0739f, #687ea7);
     padding: 2%;
+    
 }
 
 li {
@@ -533,27 +547,8 @@ footer {
 
 @media (max-width: 1024px) {
 
-    /* Global adjustments */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    /* Prevent horizontal scroll */
-    body,
-    html {
-        width: 100vw;
-        height: 100%;
-        overflow-x: hidden;
-        /* Evita o scroll horizontal */
-        margin: 0;
-        padding: 0;
-        
-    }
-
     /*RESPONSIVIDADE PAGINA HOME*/
+
     main {
         height: 100vh;
         background-color: #000000;
@@ -564,11 +559,9 @@ footer {
 
     header {
         position: relative;
-        display: flex;
+        display: block;
         width: 100%;
         height: 20%;
-        flex-direction: column;
-        justify-content: center;
         overflow: hidden;
         /* Garante que imagens grandes não causem overflow */
 
