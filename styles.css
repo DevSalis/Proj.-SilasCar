@@ -145,6 +145,8 @@ header {
     }
 }
 
+/*STYLES MENU DESKTOP*/
+
 nav {
 
     & .box-links {
@@ -195,6 +197,8 @@ nav {
         }
     }
 }
+
+/*STYLES FUNÇÕES DO MENU*/
 
 main {
     
@@ -251,6 +255,8 @@ main {
             color: #3a06f5;
         }
     }
+
+/*STYLES SEÇÃO CARROSSEL*/
 
     & .carrossel {
         background-image: radial-gradient(#a0739f, #687ea7);
@@ -401,6 +407,8 @@ main {
         }
     }
 
+    /*STYLES SEÇÃO FORMULARIO*/
+
     .box-formulario {
         height: 100vh;
         display: flex;
@@ -524,15 +532,7 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 
     /*RESPONSIVIDADE PAGINA HOME*/
 
