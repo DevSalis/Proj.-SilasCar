@@ -535,7 +535,8 @@ main {
 
     /*RESPONSIVIDADE PAGINA HOME*/
 
-    main { 
+    main {
+        height: 100vh;
         background-color: #000000;
         overflow-x: hidden;
         /* Garantir que não haja overflow horizontal */
@@ -593,8 +594,10 @@ main {
     }
 
     footer {
-        margin-top: 20%;
+        margin-top: 10%;
     }
+
+   
 
     /*RESPONSIVIDADE PAGINA PRINCIPAL*/
 
