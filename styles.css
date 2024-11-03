@@ -597,16 +597,12 @@ main {
         margin-top: 10%;
     }
 
-   
-
     /*RESPONSIVIDADE PAGINA PRINCIPAL*/
 
     nav {
         text-align: center;
         padding: 0;
         background-color: #000000;
-
-
 
         #logo-2-responsivo {
             display: block;
@@ -621,7 +617,7 @@ main {
         & .hamburger {
             display: block;
             position: absolute;
-            top: 40px;
+            top: 35px;
             right: 20px;
             width: 40px;
             z-index: 101;
@@ -670,18 +666,18 @@ main {
             }
         }
 
-    }
+        .box-links a {
+            width: 80%;
+            margin-top: 0;
+            cursor: pointer;
+        }
+    
+        .box-links a:hover {
+            opacity: 0.9;
+            background-color: #c6eef6;
+            color: #0206ff;
+        }
 
-    .box-links a {
-        width: 80%;
-        margin-top: 0;
-        cursor: pointer;
-    }
-
-    .box-links a:hover {
-        opacity: 0.9;
-        background-color: #c6eef6;
-        color: #0206ff;
     }
 
     .box-links.show {
@@ -751,6 +747,7 @@ main {
         width: 75%;
         background: #000000;
         margin: auto;
+        padding: 0;
     }
 
     .valor-total {
