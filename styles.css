@@ -837,7 +837,7 @@ main {
             }
         }
 
-        & footer { 
+        & #footerPag2 { 
             top: -13%;
         }
     }
