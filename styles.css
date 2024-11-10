@@ -534,43 +534,9 @@ main {
 @media (max-width: 900px) {
 
     /*RESPONSIVIDADE PAGINA HOME*/
-
-    main {
-        height: 100vh;
-        background-color: #000000;
-        overflow-x: hidden;
-        /* Garantir que não haja overflow horizontal */
-
-        ul {
-           
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            margin: auto;
-            padding: 0;
-
-            & li {
-                margin: 10%;
-            }
-
-            & .valor-total {
-                border: 4px solid #3a06f5;
-                border-radius: 5px;
-                padding: 10px;
-                width: 300px;
-                font-size: 15px;
-                background-color: rgb(207, 201, 188);
-                transform: none;
-                width: 80%;
-            }
-        }
-    }
-
     header {
         overflow: hidden;
-        /* Garante que imagens grandes não causem overflow */
-
+       
         & #img-logo {
             margin: 0;
             width: 100%;
@@ -583,48 +549,6 @@ main {
         }
     }
 
-    .home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        width: 100%;
-        /* Garante que ocupe 100% da largura */
-
-        & .box-text-home {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            max-width: 100%;
-            /* Garante que não exceda a largura */
-
-            & #h1-responsivo {
-                font-size: 20px;
-                width: 100%;
-            }
-
-            & #button-pag-1 {
-                font-size: 1rem;
-                padding: 10px 20px;
-                margin-top: 10%;
-            }
-        }
-
-        & #clip-responsivo {
-            width: 100%;
-            margin-top: 90%;
-            margin-left: 0;
-            /* Remove deslocamento lateral */
-        }
-    }
-
-    footer {
-        margin-top: 10%;
-    }
-
-    /*RESPONSIVIDADE PAGINA PRINCIPAL*/
-
-    /* Modal adjustments */
     .modal {
         display: flex;
         align-items: center;
@@ -758,109 +682,172 @@ main {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 
-    
-
-    
-
-    .carrossel {
-
-        & .arrows {
-            width: 80vw;
-            margin-top: -30%;
-
-            & button {
-                width: 40px;
-                height: 40px;
-
-                & img {
-                    width: 20px;
-                }
-            }
-        }
-
-        & .list {
-            & .item {
-                & .cars {
-                    top: 65%;
-                    width: 125%;
-                    left: -25px;
-                }
-
-                & .box-carrossel {
-
-
-                    /* Centraliza apenas horizontalmente */
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    /* Alinha horizontalmente ao centro */
-                    text-align: center;
-                    /* Centraliza o texto */
-                    width: 100%;
-                    /* Garante que a largura ocupe 100% da tela */
-                    height: auto;
-                    /* Permite que a altura se ajuste automaticamente */
-                    top: 3%;
-
-                    & h2 {
-                        font-size: 3em;
-                        /* Ajuste do tamanho da fonte se necessário */
-                        margin: 0;
-                        /* Remove margens do título para centralização precisa */
-                    }
-
-                    & #carrossel-p2 {
-                        font-size: 16px;
-                        /* Ajuste do tamanho da fonte se necessário */
-                        max-width: 100%;
-                        /* Garante que o texto não fique muito largo */
-                        margin: 0;
-                        text-align: left;
-
-                        br {
-                            display: none;
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-}
-
-.box-formulario {
-    br {
-        display: none;
-    }
-
-    & h2 {
-        width: 80%;
-        margin-top: -50%;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    & .button-form-open {
-        width: 70%;
-        
-    }
-
-    & #carros-pretos {
-        width: 90%;
-        height: 12%;
+    main {
+        height: 100vh;
+        background-color: #000000;
+        overflow-x: hidden;
        
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 100%;
+           
+            & .box-text-home {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                max-width: 100%;
+              
+                & #h1-responsivo {
+                    font-size: 15px;
+                    width: 100%;
+
+                    & br {
+                        display: none;
+                    }
+                }
+    
+                & #button-pag-1 {
+                    font-size: 1rem;
+                    padding: 10px;
+                    margin-top: 10%;
+                }
+            }
+    
+            & #clip-responsivo {
+                width: 100%;
+                margin-top: 90%;
+                margin-left: 0;
+                /* Remove deslocamento lateral */
+            }
+        }
+
+        ul {
+           
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: auto;
+            padding: 0;
+
+            & li {
+                margin: 10%;
+            }
+
+            & .valor-total {
+                border: 4px solid #3a06f5;
+                border-radius: 5px;
+                padding: 10px;
+                width: 300px;
+                font-size: 15px;
+                background-color: rgb(207, 201, 188);
+                transform: none;
+                width: 80%;
+            }
+        }
+
+        & .carrossel {
+
+            & .arrows {
+                width: 80vw;
+                margin-top: -30%;
+    
+                & button {
+                    width: 40px;
+                    height: 40px;
+    
+                    & img {
+                        width: 20px;
+                    }
+                }
+            }
+    
+            & .list {
+                & .item {
+                    & .cars {
+                        top: 65%;
+                        width: 125%;
+                        left: -25px;
+                    }
+    
+                    & .box-carrossel {
+    
+                        /* Centraliza apenas horizontalmente */
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        /* Alinha horizontalmente ao centro */
+                        text-align: center;
+                        /* Centraliza o texto */
+                        width: 100%;
+                        /* Garante que a largura ocupe 100% da tela */
+                        height: auto;
+                        /* Permite que a altura se ajuste automaticamente */
+                        top: 3%;
+    
+                        & h2 {
+                            font-size: 3em;
+                            /* Ajuste do tamanho da fonte se necessário */
+                            margin: 0;
+                            /* Remove margens do título para centralização precisa */
+                        }
+    
+                        & #carrossel-p2 {
+                            font-size: 16px;
+                            max-width: 100%;
+                            margin: 0;
+                            text-align: center;
+    
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .box-formulario {
+          
+           justify-content: flex-start;
+           gap: 10%;
+           height: 100vh;
+
+            & h2 {
+                width: 80%;
+                font-size: 15px;
+                text-align: center;
+                margin-top: 25%;  
+            }
+        
+            & .button-form-open {
+                width: 70%;
+            }
+        
+            & #carros-pretos {
+                width: 90%;
+                height: 12%;
+            }
+
+            & #cordel-city {
+                top: 10%;
+            }
+        }
+
+        & footer { 
+            top: -13%;
+        }
     }
 }
-
-
 
 /* Formulario oculto */
 .formulario {
     display: none;
-    /* Esconde o formulário */
 }
 
-/* Quando o botão é clicado, exibe o formulário */
 .button-form.active+.formulario {
     display: block;
 }
