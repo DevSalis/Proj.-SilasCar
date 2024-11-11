@@ -813,8 +813,8 @@ main {
         & .box-formulario {
           
            justify-content: flex-start;
-           gap: 10%;
-           height: 100vh;
+           gap: 6%;
+           height: 100%;
 
             & h2 {
                 width: 80%;
@@ -835,28 +835,28 @@ main {
             & #cordel-city {
                 top: 10%;
             }
+
+            .formulario {
+                display: none;
+            }
+            
+            .button-form.active+.formulario {
+                display: block;
+            }
+            
+            #logo-form {
+                display: none;
+            }
+            
+            .to-form {
+                margin-top: 10%;
+                width: 80%;
+            }
         }
 
         & #footerPag2 { 
-            top: -13%;
+            top: -25%;
         }
     }
 }
 
-/* Formulario oculto */
-.formulario {
-    display: none;
-}
-
-.button-form.active+.formulario {
-    display: block;
-}
-
-#logo-form {
-    display: none;
-}
-
-.to-form {
-    margin-top: 10%;
-    width: 80%;
-}
