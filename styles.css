@@ -833,7 +833,7 @@ main {
             }
 
             & #cordel-city {
-                top: 10%;
+                top: 5%;
             }
 
             .formulario {
@@ -856,6 +856,7 @@ main {
 
         & #footerPag2 { 
             top: -25%;
+            opacity: 0.3;
         }
     }
 }
