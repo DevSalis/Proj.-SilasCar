@@ -1,12 +1,12 @@
-<h1 align="center"><img width="550px" src="https://github.com/DevSalis/Proj.-SilasCar/blob/main/assets/logo-silasCar-2.png?raw=true"></h1>
+<h1 align="center"><img width="300px" src="https://github.com/DevSalis/Proj.-SilasCar/blob/main/assets/logo-silasCar-2.png?raw=true"></h1>
 <br>
-<div align="center"><img align="center" width="550px" src="https://github.com/MrSalis/Proj.-Jokenpo/blob/main/assets/mockup-jokepon.png?raw=true](https://github.com/DevSalis/Proj.-SilasCar/blob/main/assets/mockupSilasCar.png?raw=true)"/>
-<h2 align="center" font-size: 10px>Projeto responsivo, desenvolvido com as linguagens HTML, CSS e JS, com objetivo de praticar o MATH RANDOM, sobre mentoria do Professor Rodolfo Mori, criador do método 
- <a href="https://rodolfomori.com.br/devclub">DevClub</a><br>O projeto trabalha os eventos dos buttons de duas formas,<br>
-  a primeira executa o valor dos buttos, a segunda executa um sorteio aleatorio dos valores dos buttos</h2>
+<div align="center"><img align="center" width="550px" src="https://github.com/DevSalis/Proj.-SilasCar/blob/main/assets/mockupSilasCar.png"/>
+<h2 align="center" font-size: 10px>Projeto autoral e responsivo, desenvolvido com as linguagens HTML, CSS e JS, com objetivo de praticar as ferramentas map, forEach, reduce e filter.<br>
+Sobre mentoria do Professor Rodolfo Mori, criador do método 
+ <a href="https://rodolfomori.com.br/devclub">DevClub</a></h2>
 </div>
 <br>
-<p align="center"><a href="https://jokenpo-sf.netlify.app/">Clique aqui e conheça nosso site</a><p/>
+<p align="center"><a href="https://silascar.netlify.app/")>Clique aqui e conheça nosso site</a><p/>
 <div align="center" style="display: inline_block"><br>
   <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
