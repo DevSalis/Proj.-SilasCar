@@ -520,7 +520,7 @@ main {
     }
 
     footer {
-        background: #000000;
+        background: #303030;
         display: block;
         width: 100%;
         position: relative;
@@ -686,7 +686,7 @@ main {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 
-   
+
 
     main {
         height: 100vh;
@@ -830,7 +830,7 @@ main {
                 width: 80%;
                 font-size: 15px;
                 text-align: center;
-                margin-top: 25%;
+                margin-top: 0;
             }
 
             & .button-form-open {
@@ -840,11 +840,12 @@ main {
             & #carros-pretos {
                 width: 90%;
                 height: 12%;
-                margin-top: 20%;
+                margin-top: 10%;
             }
 
             & #cordel-city {
-                top: 4%;
+                top: 1%;
+                bottom: 0;
             }
 
             .formulario {
@@ -866,13 +867,10 @@ main {
         }
 
         & footer {
-            margin-top: 15%;
-           }
-
-        & #footerPag2 {
-            margin-top: -50%;
+            top: 0;
         }
+
     }
 
-    
+
 }
