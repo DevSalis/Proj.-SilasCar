@@ -728,7 +728,7 @@ main {
 
             & #clip-responsivo {
                 width: 100%;
-                margin-top: 90%;
+                margin-top: 80%;
                 margin-left: 0;
                 /* Remove deslocamento lateral */
             }
@@ -866,7 +866,7 @@ main {
         }
 
         & footer {
-            margin-top: 3%;
+            margin-top: 15%;
            }
 
         & #footerPag2 {
